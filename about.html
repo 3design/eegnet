@@ -1,776 +1,488 @@
 <!doctype html>
 <html>
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145481065-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-145481065-1');
-</script>
 <!-- favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/site.webmanifest">
-<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-<meta name="msapplication-TileColor" content="#da532c">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-<meta name="author" content="Derek Lo @ 3design-dlo.com">
 <!-- general -->
-<link rel="stylesheet" type="text/css" href="slick/slick.css">
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
-<link rel="stylesheet" type="text/css" href="css/styles.css" />
-<link rel="stylesheet" type="text/css" href="css/timeline.css" />
-<link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
-<link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
-<link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
-<link href="css/lightbox.css" rel="stylesheet" />
 <meta charset="utf-8">
-<title>the BigBrain</title>
+<title>EEGNet</title>
 <meta name="viewport" content="width=device-width">
-<meta name="description" content="This is the website of the BigBrain Project.">
-<meta name="keywords" content="Neuro, Brain, Research, Big Data, Science, Medicine">
-<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<!--
+meta name="description" content="NeuroHub - An Open Science Infrastructure for Reproducible, Collaborative, Multidisciplinary Scientific Research. This is the about page for the NeuroHub website.">
+<meta name="keywords" content="Neuro, NeuroHub, Research, Big Data, Science, Medicine, Datalad">
+-->
+<meta name="author" content="Derek Lo @ 3design-dlo.com">
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="js/drop-down.js"></script>
-<script src="js/jquery.matchHeight.js" type="text/javascript"></script>
-<script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 <div id="main-wrapper">
-  <div class="social-media">
-    <a href="https://twitter.com/BigBrainProject" class="tooltip">
-      <i class="fab fa-twitter-square"></i>
-      <span class="tooltiptext">Twitter</span>
-    </a>
-    <a href="mailto:info@bigbrainproject.org" class="tooltip">
-      <i class="fas fa-envelope-square"></i>
-      <span class="tooltiptext">Email</span>
-    </a>
-    <a href="#main-wrapper" class="tooltip">
-      <i class="fas fa-arrow-up"></i>
-      <span class="tooltiptext">Top</span>
-    </a>
-  </div>
   <!-- navigation -->
+
   <nav class="site-nav">
-    <div class="brand-border-1"></div>
-    <div class="brand-border-2"></div>
-    <div class="brand-border-3"></div>
     <div class="nav-container">
-      <div class="branding"><a href="index.html">BigBrain Project</a></div>
+      <a href="index.html"><img src="images/logo-eeg2.png" class="logo bottom" alt="EEGNet logo"></a>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
-        <li class="nav-item"><a href="hiball.html"><strong>HIBALL</strong></a></li>
-        <li class="nav-item"><a href="#!" class="active">About</a>
-          <ul class="nav-dropdown">
-            <li><a href="about.html" class="active">About Us</a></li>
-            <li><a href="references.html">References</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a href="maps-and-models.html">Maps & Models</a></li>
-        <li class="nav-item"><a href="tools-and-services.html">Tools & Services</a></li>
-        <li class="nav-item"><a href="#!">Community</a>
-          <ul class="nav-dropdown">
-            <li><a href="community.html">Our Community</a></li>
-            <li><a href="news.html">News & Events</a></li>
-            <!-- <li><a href="#!">Teaching</a></li> -->
-            <li><a href="https://bigbrain-forum.loris.ca/">Forum</a></li>
-          </ul>
-        </li>
+       <li class="nav-item"><a href="about.html" class="active">About</a></li>
+       <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
       </ul>
     </div>
   </nav>
-  <!-- intro section -->
-  <section class="hero hero-coronal lt-grey-bg">
-    <div class="grid-container">
-      <div class="hero-content-grid">
-        <div class="hero-content-container">
-          <h1>Vision and Mission</h1>
-          <p>Neuroimaging methods rely on accurate brain models as ground truth to develop reliable approaches for probing the brain. Researchers in brain simulation and AI have a growing need for detailed descriptions of the internal organisation of brain regions in terms of local morphology, cell densities, or connectivity. Currently established computer-based 3D neuroimaging tools cannot reproduce the anatomical details available from freshly cut brains, particularly for very convoluted cortical regions and in the subcortical areas. With the advent of the BigBrain - a human post-mortem brain that has been sectioned, stained for cell bodies, scanned at very high resolution, and then digitally reconstructed in 3D (Amunts, Evans et al. 2013), we believe that there will be improvement in the precision and quality of neuroimaging support for qualitative and quantitative investigation of the brain. We aim to extend this model by further increasing its resolution and integrating multimodal data, working closely with the neuroimaging, brain modelling, and AI communities to unleash its potential for research. To enable collaboration, we build a transcontinental data sharing and computing platform in close interaction with the European "Human Brain Project" and the Canadian “Healthy Brains for Healthy Lives” program.</p> 
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="clear-all"></div>
-
-  <section class="lt-grey-bg">
-    <div class="section-content lt-grey-bg text-center">
-      <!-- goals section -->
-        <h2 class="small-spacer">The BigBrain Goals</h2>
-        <div class="flex spacer">
-          <div class="quad-image scene">
-            <div class="animated-card">
-              <div class="one-to-one-aspect"></div>
-              <div class="card-face face-front">
-                <img src="images/bigbrain.png"  alt="Hiball goal: multimodal atlas">
-                <span class="flex-center">Building a highly detailed multimodal atlas</span>
-              </div>
-              <div class="card-face face-back">
-                <span class="flex-center">
-                Building a highly detailed multimodal atlas<br><br>
-                By developing novel AI-based methods for analyzing high-resolution image data, we create highly detailed maps of brain areas, cortical layers, and subcortical structures for our microscopic brain models. We complement the cytoarchitectonic model by modalities that cover fibre- and chemoarchitecture, working towards a multimodal characterization of the human brain at the microscopic scale. Furthermore, we work towards a model with a resolution in 1 micron range, which resolves individual neuronal cell bodies.</span>
-                <!-- <a href="hiball-goal-one.html"><button>read more</button></a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="quad-image scene">
-            <div class="animated-card">
-              <div class="one-to-one-aspect"></div>
-              <div class="card-face face-front">
-                <img src="images/bigbrain.png"  alt="Hiball goal: multimodal atlas">
-                <span class="flex-center">Build on the existing 3D BigBrain as a microscopic reference template</span>
-              </div>
-              <div class="card-face face-back">
-                <span class="flex-center">
-                Build on the existing 3D BigBrain as a microscopic reference template<br><br>
-                We integrate our ongoing developments with the original BigBrain model (Amunts, Evans et al. 2013) in order to foster a common microscopic reference template. This includes efforts on careful spatial registration across subjects and modalities, and propagation of maps of brain regions. </span> 
-                <!-- <a href="hiball-goal-two.html"><button>read more</button></a> -->
-              </div>
-            </div>
-          </div>
-          
-          <div class="quad-image scene">
-            <div class="animated-card">
-              <div class="one-to-one-aspect"></div>
-              <div class="card-face face-front">
-                <img src="images/bigbrain.png"  alt="Hiball goal: multimodal atlas">
-                <span class="flex-center">Building a distributed platform for big neuroscience data</span>
-              </div>
-              <div class="card-face face-back">
-                <span class="flex-center">
-                Building a distributed platform for big neuroscience data<br><br>
-                By increasing the resolution to the level of individual neuronal cell bodies, the size of whole brain models reaches the Petabyte scale. To address such Big Data challenge, we establish specific workflows for distributed data management and processing, and tools for remote visualization and annotation of 2D and 3D data. This also requires standardization efforts for data and metadata formats. We align these infrastructure development efforts with the developments of the Human Brain Project and the HBHL program to maximize compatibility with the international initiatives.</span>
-                <!-- <a href="hiball-goal-three.html"><button>read more</button></a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="quad-image scene">
-            <div class="animated-card">
-              <div class="one-to-one-aspect"></div>
-              <div class="card-face face-front">
-                <img src="images/bigbrain.png"  alt="Hiball goal: multimodal atlas">
-                <span class="flex-center">AI link to data science and brain inspired computing</span>
-              </div>
-              <div class="card-face face-back">
-                <span class="flex-center">
-                AI link to data science and brain inspired computing<br><br>
-                The BigBrain project is entangled with AI research in two fundamental ways - by developing novel image analysis methods based on Machine and Deep Learning, and by contributing knowledge about the microstructural organization of biological neural networks in the brain. The project initiates early cooperation with researchers in brain inspired AI and computing to incorporate information about the human brain into the design of artificial systems.</span>
-                <!-- <a href="hiball-goal-four.html"><button>read more</button></a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="quad-image scene">
-            <div class="animated-card">
-              <div class="one-to-one-aspect"></div>
-              <div class="card-face face-front">
-                <img src="images/bigbrain.png"  alt="Hiball goal: multimodal atlas">
-                <span class="flex-center">Virtual BigBrain and simulation platform</span>
-              </div>
-              <div class="card-face face-back">
-                <span class="flex-center">
-                Virtual BigBrain and simulation platform<br><br>
-                The VirtualBrain (TVB) uses empirical knowledge of brain structure to constrain models that simulate network dynamics, which in turn can be validated with experimental observations of brain function. Complementing related work in the Human Brain Project, we support the development of TVB models with increased spatial resolution and regional heterogeneity by informing them with microscopic resolution data, and evaluating optimized software and hardware environments for the CBRAIN platform.</span>
-                <!-- <a href="hiball-goal-five.html"><button>read more</button></a> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="quad-image scene">
-            <div class="animated-card">
-              <div class="one-to-one-aspect"></div>
-              <div class="card-face face-front">
-                <img src="images/bigbrain.png"  alt="Hiball goal: multimodal atlas">
-                <span class="flex-center">Open Community Resource</span>
-              </div>
-              <div class="card-face face-back">
-                <span class="flex-center">
-                Open Community Resource<br><br>
-                The BigBrain Project continues to build an open resource and a lively scientific community within a collaborative research and training environment. We will share  our datasets and tools through the platform, aim to integrate them with the EBRAINS and CBRAIN ecosystems, and engage with the BigBrain user and contributor community through open project meetings, workshops, and online services.</span>
-                <!-- <a href="hiball-goal-five.html"><button>read more</button></a> -->
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>  
-  </section>
-
-<script type="text/javascript">
-  $("document").ready(function($){
-    var $flipper = $('.animated-card');
-      $('.scene').on('click', '.animated-card', function() {
-        if ($(this).hasClass("card-flip")) {
-            $flipper.removeClass("card-flip");
-        } else {
-            $flipper.removeClass("card-flip");
-            $(this).toggleClass('card-flip');
-        } 
-    });
-  });
-</script>
-
-<!-- timeline section -->
   <section>
-    <div class="section-content max100">
-      <h1 class="text-center spacer">History of BigBrain</h1>
-      <div id="slick-slider" class="slider slider-padding">
-          <div class="testimonial">
-            <div class="col-2 flex-center">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/wSHC_7yz0hs?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="col-2">
-              <div class="text-box">
-                <h2>1. What is the BigBrain</h2>
-                <p>BigBrain is a freely accessible high-resolution 3D digital model of the human brain, released in June 2013 by a team of researchers at the Montreal Neurological Institute (Canada) and the Forschungszentrum Jülich (Germany). The isotropic 3D spatial resolution of the BigBrain atlas is 20 µm, much finer than other models. In 2014, BigBrain was cited in the <a href="http://www.technologyreview.com/featuredstory/526501/brain-mapping/">Top 10 MIT Technology Review</a>. Since then, it is continuously enriched by detailed maps of cortical areas and layers as well as subcortical regions. It became the basis of many neuroscientific studies.</p>
-              </div>
-            </div>
-          </div>
-
-<!--           <div class="testimonial">
-            <div class="col-2 flex-center">
-              <a href="images/history-aquisition.png" data-lightbox="bbstory">
-                <img src="images/history-aquisition.png">                  
+    <div id="tabs">
+          <ul id="second-nav" class="tabs-list stick">
+            <li>
+              <a href="#tabs">
+                <button data-mh="button">
+                  About EEGNet
+                </button>
               </a>
-              <p class="caption">Digital rendering with CIVET<br>
-                <a href="http://mcin-cnim.ca/wp-content/uploads/2017/08/RBIQ2016BigBrain.png">OHBM poster from 2016</a>
-              </p> 
-            </div>
-            <div class="col-2">
-              <div class="text-box">
-                <h2>2. Acquisition: Source brain</h2>
-                <p>The 3D model was created from the brain of an unidentified 65-year-old man who died with no known brain pathology. The postmortem brain, which was obtained in accordance with ethical requirements of the University of Düsseldorf, was first scanned using an MRI machine, then embedded in paraffin.</p>
-              </div>
-            </div>
-          </div> -->
-
-          <div class="testimonial">
-            <div class="col-2 flex-baseline">
-                <div class="two-col">
-                  <a href="images/history-digitize1.png" data-lightbox="bbstory">
-                    <img src="images/history-digitize1.png">
-                  </a>
-                  <p class="caption">A paraffin embedded brain was cut into 7404 histological sections, each 20 micrometers thick, using a microtome.. <br> Copyright: Amunts, Zilles, Evans et al.</p>
-                </div>
-                <div class="two-col">
-                  <a href="images/history-digitize2.png" data-lightbox="bbstory">
-                    <img src="images/history-digitize2.png">
-                  </a>
-                  <p class="caption">A paraffin embedded brain was cut into 7404 histological sections, each 20 micrometers thick, using a microtome.<br> Copyright:  Amunts, Zilles, Evans et al. </p>
-                </div>
-            </div>
-            <div class="col-2">
-              <div class="text-box">
-                <h2>2. Acquisition, histological processing, and digitization at 20 μm</h2>
-                <p>The 3D model was created from the brain of an 65-year-old body donor. The postmortem brain was obtained in accordance with ethical requirements of the University of Düsseldorf. It was fixed in formalin, and imaged in 2003 using a MR scanner. In 2005, it was cut into 7,404 sections 20 µm thick using a large-scale microtome. The brain sections were placed on glass slides and stained for cell bodies using the Merker method, resulting in darkly stained neurons and light neuropile, i.e. the space in between neurons filled with the branches of the cells and synapses. The stained sections were scanned and digitized using a flatbed scanner at 2400dpi (10 µm), creating a one Terabyte raw record. The acquisition process (wet work + scanning)  took about 1,000 hours of labor.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial">
-            <div class="col-2 flex-center">
-              <a href="images/processing.png" data-lightbox="bbstory">
-                <img src="images/processing.png">                  
+            </li>
+            <li>
+              <a href="#map-anchor">
+                <button data-mh="button">
+                  Network Map
+                </button>
               </a>
-            </div>
-            <div class="col-2">
-              <div class="text-box">
-                <h2>3. Manual repairing of tissue artefacts in the images </h2>
-                <p>The resulting digital images were carefully processed by a team of operators to identify and manually fix artifacts such as tears and folds, which arise inevitably during histological processing.  The manual repair process was complemented by automated repairs, carefully blending information from neighbouring sections to replace missing pieces of brain tissue where required.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial">
-            <div class="col-2 flex-center">
-              <a href="images/history-aquisition.png" data-lightbox="bbstory">
-                <img src="images/history-aquisition.png">                  
+            </li>
+            <li>
+              <a href="#publications-anchor">
+                <button data-mh="button">
+                  Related Publications
+                </button>
               </a>
-              <p class="caption">Digital rendering with CIVET<br>
-                <a href="http://mcin-cnim.ca/wp-content/uploads/2017/08/RBIQ2016BigBrain.png">OHBM poster from 2016</a>
-              </p> 
-            </div>
-            <div class="col-2">
-              <div class="text-box">
-                <h2>4. 3D reconstruction using image processing with HPC</h2>
-                <p>The corrected digital sections were nonlinearly registered to the postmortem MRI in an iterative process, and reassembled into a consistent 3D computer model with a spatial isotropic 3D resolution of 20 µm. The aligned images were optically balanced to remove colouring artifacts from staining. Dealing with more than 7000 images, this was a highly complex and compute intensive process which would not have been possible without supercomputers. Including all manual work, the 3D reconstruction took five years to complete.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial">
-            <div class="col-2 flex-center">
-              <!-- <a href="images/neuroglancer.png" data-lightbox="bbstory">
-                <img src="images/neuroglancer.png">                  
-              </a> -->
-              <a href="images/a3d.png" data-lightbox="bbstory">
-                <img src="images/a3d.png">                  
-              </a>
-            </div>
-            <div class="col-2">
-              <div class="text-box">
-                <h2>5. Rendering and annotating the BigBrain </h2>
-                <p>Standard tools for volumetric image rendering and annotation were not applicable to the BigBrain due to its size: A Terabyte of image date does not fit into a typical computer’s working memory. Specific software had to be developed which provides very efficient  loading and rendering of the image data to visualize the BigBrain and allow smooth interactions and annotations in 3D space. The Atelier3D software developed by the National Research Council Canada (NRC) is one of the few available tools that were able at that time to render and interactively annotate such huge image volumes, and had been specifically adjusted for brain navigation and mapping.<!--  <a href="https://bigbrain.humanbrainproject.eu ">https://bigbrain.humanbrainproject.eu</a> --></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial">
-            <div class="col-2 flex-center">
-              <a href="images/history-analysis.png" data-lightbox="bbstory">
-                <img src="images/history-analysis.png">              
-              </a>
-              
-            </div>
-            <div class="col-2">
-              <div class="text-box">
-                <h2>6. Analysis: Mapping of the BigBrain</h2>
-                <p>We have applied different approaches to map cortical areas and subcortical nuclei in the BigBrain. For the cerebral cortex, we applied image analysis and statistical tools to identify borders between areas (Schleicher et al., 2005), while nuclei were manually  delineated. Most recently, automatic methods derived from artificial intelligence (machine learning and deep learning) were applied map brain areas (Spitzer et al.), and to extract cortical layers or count groups of cells (Wagstyl et al.). Check out recent work on our <a href="https://3design.github.io/news.html">news feed!</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial">
-            <div class="col-2 flex-center">
-              <a href="images/a3d.png" data-lightbox="bbstory">
-                <img src="images/a3d.png">                  
-              </a>
-            </div>
-            <div class="col-2">
-              <div class="text-box">
-                <h2>7. Dissemination: Sharing the atlas with the world</h2>
-                <p>The BigBrain image datasets are currently hosted by the project on an <a href="ftp://bigbrain.loris.ca/">ftp server</a>. The model has been integrated as a core reference space of the multilevel human brain atlas of the <a href="https://ebrains.eu/services/atlases/brain-atlases">Human Brain Project</a>. In the future, data sharing will be offered through a fully versioned online system developed within the framework of <a href="hiball.html">HIBALL</a>. In Summer 2017 the first version of the Human Brain Project’s web-based 3D atlas viewer was released, building on Google’s open source project Neuroglancer. It is capable of displaying very large brain volumes, including oblique slicing, a whole brain overview, surface meshes, and maps. It enables navigating the BigBrain in 3D, exploring the growing set of highly detailed maps for cortical layers and cytoarchitectonic areas, and finding related neuroscience data. BigBrain can be explored in the viewer at <a href="https://bigbrain.humanbrainproject.eu">Human Brain Project website.</a> </p>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
+            </li>
+          </ul>
+        </div>
   </section>
-
-  <!-- publications section -->
-  <section class="lt-grey-bg">
-    <div class="section-content flex lt-grey-bg">
-      <h1 class="full-width text-center">The BigBrain Featured</h1>
-      <h2 class="full-width text-center">Major publications featuring the dataset</h2>
-      <div class="col-2 wide-card">
-        <div class="col-2">
-          <img src="images/science_cover.gif" class="BigBrainPic" data-mh="card-pic">
-        </div>
-        <div class="col-2">
-          <div class="text-box">
-            <div class="small-spacer" data-mh="card-details">
-              <h1>Science Magazine</h1>
-              <h2>BigBrain: An Ultrahigh-Resolution 3D Human Brain Model</h2>
-              <p>The original publication of the BigBrain</p>
+    <!-- technical section -->
+    <section class="extreme-top">
+      <!--div class="section-content flex card-holder flex-center"-->
+      <!--div class="col-2" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-offset="100" data-aos-delƒimgay="250"-->
+      <div class="section-content flex card-holder flex-center data-aos-offset="100" data-aos-delƒimgay="250">
+        <h1 class="full-width text-center">About EEGNet</h1>
+        <p>A national network of neuroscience researchers bring together expertise across <a href="#map-anchor">10 sites and 5 provinces</a>.</p>
+        <p>Many EEGNet researchers also form part of the Canadian Open Neuroscience Platform (<a href="http://CONP.ca">CONP</a>) as well as the Global Brain Consortium (<a href="https://globalbrainconsortium.org/">GBC</a>).</p>
+        <ul class="full-width team-list">
+        <h1 class="full-width text-center">Lead Investigator</h1>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-alan-evans.jpg" class="team-image" alt="this is an image of Alan Evans"><br>
+              <p class="team-name">Alan C. Evans, McGill University</p>
             </div>
-            <a href="https://science.sciencemag.org/content/340/6139/1472"><button class="float-right">read the full article</button></a>
-          </div>
-        </div>
-      </div>  
-      <div class="col-2 wide-card">
-        <div class="col-2 ">
-          <img src="images/mit-magazine.jpg" class="BigBrainPic" data-mh="card-pic">
-        </div>
-        <div class="col-2">
-          <div class="text-box">
-            <div class="small-spacer" data-mh="card-details">
-              <h1>MIT Technology Review</h1>
-              <h2>One of the Top 10 Breakthroughs of 2014 </h2>
-              <p>MIT Technology Review listed the BigBrain as 1 of the Top 10 Breakthroughs of 2014.</p>
+            <div class="col-75">
+              <p class="team-description">Alan Evans is James McGill Professor of Neurology and Psychiatry at McGill. His research covers multi-modal brain imaging and structural network modeling (www.mcin.ca). He is co-Director of the Ludmer Centre for Neuroinformatics and Mental Health, using high-performance computing to integrate imaging, behavior, genetics data in research into neurodegeneration and neurodevelopment.</p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>In 2014, he received the Vezina Prize for Québec Neuroradiology, the national Margolese Human Brain Disorders Prize and was a Highly Cited Scientist (146,384 citations ; top 1%) for Neuroscience and Behavior. He is a Fellow of the Royal Society of Canada and 2017 Chair of the Organization for Human Brain Mapping (OHBM). In 2016, he received the Wilder Penfield Prix du Québec. In 2017, he was awarded the Senate of Canada 150 Medal, ranked #6 in its list of ten most influential brain scientists of the modern era by Science magazine and inducted as a Fellow of the College of Academic Health Sciences. In 2018, he was awarded the Heinz Lehmann Prize for services to Neuropsychopharmacology, the Victor Dahdaleh Chair in Neurosciences and the Club de Recherches Clinique du Québec Mentorship Prize. In 2019, he was awarded the OHBM Glass Brain Award for lifetime achievement. He is currently Scientific Director of McGill’s $84M CFREF project “Healthy Brains for Healthy Lives” (www.mcgill.ca/hbhl) and Scientific Director of the Canadian Open Neuroscience Platform (www.conp.ca). CONP uses the LORIS (multimodal databasing) and CBRAIN (high-performance computing) platforms, developed at the MCIN.</p>
+              </details>
             </div>
-            <a href="http://www.technologyreview.com/featuredstory/526501/brain-mapping/"><button class="float-right">read the full article</button></a>
-          </div>
-        </div>
-      </div> 
-    </div>
-  </section>
-  <div class="clear-all"></div>  
-
-<!-- team section  -->
-
-  <section>
-    <div class="section-content no-side-pad max100">
-      <h1 class="full-width text-center">BigBrain team</h1>
-      <h2 class="full-width text-center">The people from the original project</h2>
-      <div class="mosaic">
-        <img src="images/profile-katrin-amunts.png" class="">
-        <div class="mosaic-overlay">
-          <div class="mosiac-overlay-name julich-small">Katrin Amunts</div>
-          <div class="card-jobtitle">Director, Institute Structural and functional organisation of the brain (INM-1)</div>
-          <a href="https://www.fz-juelich.de/inm/inm-1/EN/Home/home_node.html" class="wordbreak">Forschungszentrum Jülich</a>
-          <br>
-          <div class="card-jobtitle">Director, C. and O. Vogt-Institute of Brain Research</div>
-          <a href="https://www.uniklinik-duesseldorf.de/patienten-besucher/klinikeninstitutezentren/c-u-o-vogt-institut-fuer-hirnforschung">Universitätsklinikum Düsseldorf</a>
-        </div>
-      </div>
-      <div class="mosaic">
-        <img src="images/team/profile-temp2.png" class="">
-        <div class="mosaic-overlay">
-          <div class="mosiac-overlay-name mcgill-small">Claude Lepage</div>
-          <div class="card-jobtitle">Development and programming of image-processing tools for 3D reconstruction/alignment and automatic repair pipelines, manual repairs, registration, quality control and documentation</div>
-          <a href="http://mcin.ca">McGill Centre for Integrative Neuroscience</a>
-        </div>
-      </div>
-      <div class="mosaic">
-        <img src="images/team/team-louis.jpg" class="">
-        <div class="mosaic-overlay">
-          <div class="mosiac-overlay-name other-small">Louis Borgeat</div>
-          <div class="card-jobtitle">Volume data modeling and integration, development of the Atelier3D remote visualization and analysis tools</div>
-          <a href="https://nrc.canada.ca/">National Research Council of Canada</a>
-        </div>
-      </div>
-      <div class=" mosaic">
-        <img src="images/team/profile-temp2.png" class="">
-        <div class="mosaic-overlay">
-          <div class="mosiac-overlay-name julich-small">Hartmut Mohlberg</div>
-          <div class="card-jobtitle">Institute structural and functional organisation of the brain (INM-1)</div>
-          <a href="https://www.fz-juelich.de/inm/inm-1/EN/Home/home_node.html" class="wordbreak">Forschungszentrum Jülich</a>
-        </div>
-      </div>
-      <div class="mosaic">
-        <img src="images/team/team-dickscheid.png" class="">
-        <div class="mosaic-overlay">
-          <div class="mosiac-overlay-name julich-small">Timo Dickscheid</div>
-          <div class="card-jobtitle">Institute structural and functional organisation of the brain (INM-1)</div>
-          <a href="https://www.fz-juelich.de/inm/inm-1/EN/Home/home_node.html" class="wordbreak">Forschungszentrum Jülich</a>
-        </div>
-      </div>
-      <div class=" mosaic">
-        <img src="images/team/team-marc.png" class="">
-        <div class="mosaic-overlay">
-          <div class="mosiac-overlay-name mcgill-small">Marc-Étienne Rousseau </div>
-          <div class="card-jobtitle">Computing platform manager</div>
-          <a href="http://mcin.ca">McGill Centre for Integrative Neuroscience</a>
-        </div>
-      </div>
-      <div class="mosaic">
-        <img src="images/team/team-bludau.png" class="">
-        <div class="mosaic-overlay">
-          <div class="mosiac-overlay-name julich-small">Sebastian Bludau</div>
-          <div class="card-jobtitle">Institute structural and functional organisation of the brain (INM-1)</div>
-          <a href="https://www.fz-juelich.de/inm/inm-1/EN/Home/home_node.html" class="wordbreak">Forschungszentrum Jülich</a>
-        </div>
-      </div>
-      <div class="mosaic">
-        <img src="images/team/team-bazin.jpg" class="">
-        <div class="mosaic-overlay">
-          <div class="mosiac-overlay-name other-small">Pierre-Louis Bazin</div>
-          <div class="card-jobtitle">Senior Onderzoeker</div>
-          <a href="https://herseninstituut.nl/over-ons/de-organisatie/medewerkers/pierre-louis-bazin/">Herseninstituut</a>
-        </div>
-      </div>
-      <div class="mosaic">
-        <img src="images/team/team-llewis.jpg" class="">
-        <div class="mosaic-overlay">
-          <div class="mosiac-overlay-name mcgill-small">Lindsay B. Lewis</div>
-          <div class="card-jobtitle">Manual repairs, quality control and documentation</div>
-          <a href="http://mcin.ca">McGill Centre for Integrative Neuroscience</a>
-        </div>
-      </div>
-      <div class=" mosaic">
-        <img src="images/team/team-oros-peusquens.png" class="">
-        <div class="mosaic-overlay">
-          <div class="mosiac-overlay-name julich-small">Ana-Maria Oros-Peusquens</div>
-          <div class="card-jobtitle">Institute structural and functional organisation of the brain (INM-1)</div>
-          <a href="https://www.fz-juelich.de/inm/inm-1/EN/Home/home_node.html" class="wordbreak">Forschungszentrum Jülich</a>
-        </div>
-      </div>
-      <div class=" mosaic">
-        <img src="images/team/team-shah.png" class="">
-        <div class="mosaic-overlay">
-          <div class="mosiac-overlay-name julich-small">Nadim J. Shah</div>
-          <div class="card-jobtitle">Director of the Institute Medical Imaging Physics (INM-4)</div>
-          <a href="https://www.fz-juelich.de/inm/inm-4/EN/Home/home_node.html" class="wordbreak">Forschungszentrum Jülich</a>
-        </div>
-      </div>
-      <div class="mosaic">
-        <img src="images/team/team-lippert.png" class="">
-          <div class="mosaic-overlay">
-          <div class="mosiac-overlay-name julich-small">Thomas Lippert</div>
-          <div class="card-jobtitle">Director of the Institute for Advanced Simulation, Head of Jülich Supercomputing Centre</div>
-          <a href="https://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html" class="wordbreak">Forschungszentrum Jülich</a>
-        </div>
-      </div>
-      <div class=" mosaic">
-        <img src="images/dr-zilles.jpg" class="">
-        <div class="mosaic-overlay">
-          <div class="mosiac-overlay-name julich-small"> Karl Zilles</div>
-          <div class="card-jobtitle">Institute structural and functional organisation of the brain (INM-1), Forschungszentrum Jülich</div>
-          <a href="https://www.fz-juelich.de/inm/inm-1/EN/Home/home_node.html" class="wordbreak">Forschungszentrum Jülich</a>
-          <div class="card-jobtitle">former Director of the Institute of Neuroscience and Medicine</div>
-          <div class="card-jobtitle">former director of the C. and O. Vogt-Institute of Brain Research</div>
-        </div>
-      </div>
-      <div class="mosaic">
-        <img src="images/profile-alan-evans.png" class="">
-        <div class="mosaic-overlay">
-          <div class="mosiac-overlay-name mcgill-small">Alan Evans</div>
-          <div class="card-jobtitle">James McGill Professor of Neurology, Psychiatry, Biomedical Eng.</div>
-          <a href="https://mcgill.ca">McGill University</a>
-          <a href="http://mcin.ca">mcin.ca</a>
-        </div>
-      </div>
-      <div class="clear-all spacer"></div>
-      <!-- additional team list -->
-
-      <ul class="contributors-list">
-        <li class="contributor mcgill-small">
-         Reza Adalat, <a href="http://mcin.ca/" class="">McGill Centre for Integrative Neuroscience</a>
-        </li>
-        <li class="contributor julich-small">
-          René Bergs, <a href="https://www.fz-juelich.de" class="">Forschungszentrum Jülich</a>
-        </li>
-        <li class="contributor julich-small">
-          Ursula Blohm, <a href="https://www.fz-juelich.de" class="">Forschungszentrum Jülich</a>
-        </li>
-        <li class="contributor mcgill-small">
-          Samir Das, <a href="http://mcin.ca/" class="">McGill Centre for Integrative Neuroscience</a>
-        </li>
-        <li class="contributor julich-small">
-          Franziska Henke, <a href="https://www.fz-juelich.de" class="">Forschungszentrum Jülich</a>
-        </li>
-        <li class="contributor julich-small">
-          René Hübbers, <a href="https://www.fz-juelich.de" class="">Forschungszentrum Jülich</a>
-        </li>
-        <li class="contributor julich-small">
-          Timo Hütz, <a href="https://www.fz-juelich.de" class="">Forschungszentrum Jülich</a>
-        </li>
-        <li class="contributor julich-small">
-          Florian Janetzko, <a href="https://www.fz-juelich.de" class="">Forschungszentrum Jülich</a>
-        </li>
-        <li class="contributor other-small">
-          Andrew Janke, <a href="https://cai.centre.uq.edu.au/" class="">Center for Advanced Imaging, University of Queensland</a>
-        </li>
-        <li class="contributor mcgill-small">
-          Nicolas Kassis, <a href="http://mcin.ca/" class="">McGill Centre for Integrative Neuroscience</a>
-        </li>
-        <li class="contributor julich-small">
-          Melanie Kleiner, <a href="https://www.fz-juelich.de" class="">Forschungszentrum Jülich</a>
-        </li>
-        <li class="contributor julich-small">
-          Ferdag Kocaer, <a href="https://www.fz-juelich.de" class="">Forschungszentrum Jülich</a>
-        </li>
-        <li class="contributor mcgill-small">
-          Dave MacFarlane, <a href="http://mcin.ca/" class="">McGill Centre for Integrative Neuroscience</a>
-        </li>
-        <li class="contributor other-small">
-          Philippe Massicotte, <a href="https://nrc.canada.ca/" class="">National Research Council of Canada</a>
-        </li>
-        <li class="contributor julich-small">
-          Patricia Morosan, <a href="https://www.fz-juelich.de" class="">Forschungszentrum Jülich</a>
-        </li>
-        <li class="contributor julich-small">
-          Katja Morstadt, <a href="https://www.fz-juelich.de" class="">Forschungszentrum Jülich</a>
-        </li>
-        <li class="contributor mcgill-small">
-          Mia Petkova, <a href="http://mcin.ca/" class="">McGill Centre for Integrative Neuroscience</a>
-        </li>
-        <li class="contributor julich-small">
-          Uwe Pietrzyk, <a href="https://www.fz-juelich.de" class="">Forschungszentrum Jülich</a>
-        </li>
-        <li class="contributor julich-small">
-          Julia Reckfort, <a href="https://www.fz-juelich.de" class="">Forschungszentrum Jülich</a>
-        </li>
-        <li class="contributor mcgill-small">
-         Pierre Rioux, <a href="http://mcin.ca/" class="">McGill Centre for Integrative Neuroscience</a>
-        </li>
-        <li class="contributor julich-small">
-          Martin Schober, <a href="https://www.fz-juelich.de" class="">Forschungszentrum Jülich</a>
-        </li>
-        <li class="contributor mcgill-small">
-         Tarek Sherif, <a href="http://mcin.ca/" class="">McGill Centre for Integrative Neuroscience</a>
-        </li>
-        <li class="contributor mcgill-small">
-         Jordan Sterling, <a href="http://mcin.ca/" class="">McGill Centre for Integrative Neuroscience</a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-
-<!-- faq section -->
-  <section class="lt-grey-bg">
-    <div class="section-content flex lt-grey-bg">
-      <h1 class="full-width text-center">BigBrain FAQ</h1>
-      <h2 class="full-width text-center">Frequently asked questions about the BigBrain</h2>
-      <!-- accordian -->
-      <div class="accordian">
-        <ul>
-          <li>
-            <h3 class="title">
-              <span class="fa fa-plus"></span>
-              <span class="faq-q">Q: </span>
-              <a class="anchor" id="citation"></a>
-              <p class="question">How to Cite</p>
-            </h3>
-            <p class="answer"><span class="faq-q">A: </span>When referring to the BigBrain Project or using the data, please cite the original Science 2013 publication:<br><br>Amunts K, Lepage C, Borgeat L, Mohlberg H, Dickscheid T, Rousseau M-É, Bludau S, Bazin PL, Lewis LB, Oros-Peusquens AM, Shah NJ, Lippert T, Zilles K, Evans AC. BigBrain: An ultrahigh-resolution 3D human brain model. Science. 2013; 340(6139):1472-1475. doi: 10.1126/science.1235381. PMID: 23788795.</p>
-          </li>
-          <li>
-            <h3 class="title">
-              <span class="fa fa-plus"></span>
-              <span class="faq-q">Q: </span>
-              <p class="question">What is the BigBrain</p>
-            </h3>
-            <p class="answer"><span class="faq-q">A: </span>The BigBrain is the brain of a 65yo man with no known neurological or psychiatric diseases in clinical records at time of death. The brain was embedded in paraffin and sectioned in 7404 coronal histological sections (20 microns), stained for cell bodies. The BigBrain is the digitized reconstruction of the high-resolution histological sections (20 microns isotropic).</p>
-          </li>
-          <li>
-            <h3 class="title">
-              <span class="faq-q">Q: </span>
-              <p class="question">What are all the volumes listed in the table?</p>
-              <span class="fa fa-plus"></span>
-            </h3>
-            <p class="answer"><span class="faq-q">A: </span>The volumes are represented in either stereotaxic space (MNI-ICBM152 or MNI-SYN24) or in native histological space. The stereotaxic registration is not perfect but it is very good. The templates for registration (ICBM152 and SYN24) are made available in those tables. The BigBrain volumes are offered at 100, 200, 300, 400 microns isotropic in both MINC (.mnc) and NIfTI (.nii) formats.</p>
-          </li>
-          <li>
-            <h3 class="title">
-              <span class="faq-q">Q: </span>
-              <p class="question">Why is the aligned BigBrain showing such strong asymmetry?</p>
-              <span class="fa fa-plus"></span>
-            </h3>
-            <p class="answer"><span class="faq-q">A: </span>The asymmetry results from aligning the histology sections to the MRI of the brain taken after it was extracted from the skull and set in formalin. We do not have a post-mortem MRI of the undistorted brain inside the head.</p>
-          </li>
-          <li>
-            <h3 class="title">
-              <span class="faq-q">Q: </span>
-              <p class="question">The intensities are wrong in the NIfTI volumes. How can I view them correctly?</p>
-              <span class="fa fa-plus"></span>
-            </h3>
-            <p class="answer"><span class="faq-q">A: </span>There was a problem with the initial data conversion to NIfTI format. The NIfTI volumes have been replaced on Sept 3, 2013. You will have to download the new volumes to view them in fslview, mricron or afni tools.</p>
-          </li>
-          <li>
-            <h3 class="title">
-              <span class="faq-q">Q: </span>
-              <p class="question">How can I download the MINC volumes? The files appear incomplete.</p>
-              <span class="fa fa-plus"></span>
-            </h3>
-            <p class="answer"><span class="faq-q">A: </span>Your browser may be limiting the maximum size of the file to transfer. This is problematic for the 100-micron MINC volumes.</p>
-          </li>
-          <li>
-            <h3 class="title">
-              <span class="faq-q">Q: </span>
-              <p class="question">How can I view the MINC volumes?</p>
-              <span class="fa fa-plus"></span>
-            </h3>
-            <p class="answer"><span class="faq-q">A: </span>MINC is an imaging format developed at the MNI. To obtain binaries (mostly Linux and OSX) of the MINC tools, download the MINC Tool Kit <a href="http://www.bic.mni.mcgill.ca/ServicesSoftware/HomePage">here</a>. The viewers are called register and Display.</p>
-          </li>
-          <li>
-            <h3 class="title">
-              <span class="faq-q">Q: </span>
-              <p class="question">How do I view the volumes online?</p>
-              <span class="fa fa-plus"></span>
-            </h3>
-            <p class="answer"><span class="faq-q">A: </span>The web-based viewer is TissueStack. Documentation is available at: <a href="http://www.tissuestack.org/">http://www.tissuestack.org/</a>. As you will soon discover, there is a limitation in the zoom factor in TissueStack.</p>
-          </li>
-          <li>
-            <h3 class="title">
-              <span class="faq-q">Q: </span>
-              <p class="question">How can I view the OBJ surfaces?</p>
-              <span class="fa fa-plus"></span>
-            </h3>
-            <p class="answer"><span class="faq-q">A: </span>The OBJ surfaces are viewable in <a href="https://brainbrowser.cbrain.mcgill.ca">Brainbrowser</a>, <a href="http://www.math.mcgill.ca/keith/surfstat">Surfstat (MATLAB-based) toolbox</a>, <a href="https://wiki.mouseimaging.ca/display/MICePub/brain-view">Brain-view</a>, or overlaid on the corresponding volume in Display, etc.</p>
-          </li>
-          <li>
-            <h3 class="title">
-              <span class="faq-q">Q: </span>
-              <p class="question">Is there an MRI of the BigBrain?</p>
-              <span class="fa fa-plus"></span>
-            </h3>
-            <p class="answer"><span class="faq-q">A: </span>Yes, there is one of the fixed brain (removed from skull). It has an isotropic voxel size resolution of 0.444mm, and is available in the Raw_Data/MRI subdirectory. Note that the current version is in "processing space" with y-z axes flipped.</p>
-          </li>
-          <li>
-            <h3 class="title">
-              <span class="faq-q">Q: </span>
-              <p class="question">How can I view the volumes as in the bigbrain videos?</p>
-              <span class="fa fa-plus"></span>
-            </h3>
-            <p class="answer"><span class="faq-q">A: </span>The BigBrain videos were created using Atelier3D, a licensed software which is currently not distributed. The volume read in Atelier3D is at 20-micron isotropic, which is too big for file transfers. This is why reduced volumes at 100, 200, 300, 400 microns have been created. </p>
-          </li>
-          <li>
-            <h3 class="title">
-              <span class="faq-q">Q: </span>
-              <p class="question">Is there sound to the bigbrain videos?</p>
-              <span class="fa fa-plus"></span>
-            </h3>
-            <p class="answer"><span class="faq-q">A: </span>No </p>
-          </li>
-          <li>
-            <h3 class="title">
-              <span class="faq-q">Q: </span>
-              <p class="question">Is there a way to mass-download the data files?</p>
-              <span class="fa fa-plus"></span>
-            </h3>
-            <p class="answer"><span class="faq-q">A: </span>Yes. As of March 12th, 2014, all sections and volumes are available on an anonymous FTP server located at the same address as this site. We recommend connecting to the FTP server using a command line or GUI client (e.g., <a href="https://filezilla-project.org">Filezilla</a>), but not a web browser. % ftp bigbrain.loris.ca (enter anonymous as the username and your e-mail as the password) Use the command "ls" to list the contents, "cd" to change directory, "get" to download files.</p>
+            <div class="clear-all"></div>
           </li>
         </ul>
+        <ul class="full-width team-list">
+        <h1 class="full-width text-center">Co-Investigators</h1>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-sid-segalowitz.jpg" class="team-image" alt="this is an image of Sid Segalowitz"><br>
+              <p class="team-name">Sid Segalowitz, Brock University</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Dr. Sid Segalowitz is a Professor in the Department of Psychology and Centre for Neuroscience at Brock University, and the founding and current Director of the Jack and Nora Walker Centre for Lifespan Development Research. A native of Montreal, he received his undergraduate training at McGill University and PhD from Cornell University. His research primarily uses EEG/ERP technologies in addressing questions in cognitive and affective neuroscience, including those relating cortical responses to individual differences in personality traits and differences in age.</p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>Central foci have been the response of medial frontal cortex to challenges of attention and response control, and evidence for early cortical responses to processing visual information including emotional faces and words. Current developmental research involves using these measures in normative mental health in adolescents and also those with mental health challenges. His group has also been developing advances in EEG/ERP processing. His work has been funded directly by NSERC, SSHRC, and CIHR, and through collaborations by NIH, OBI, Brain Canada and several private foundations.</p>
+                </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-philippe-albouy.jpg" class="team-image" alt="this is an image of Philippe Albouy"><br>
+              <p class="team-name">Philippe Albouy, Université Laval</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Dr. Philippe Albouy is an assistant professor at the psychology department of Laval University, a regular researcher at CERVO Brain Research Centre (Quebec City) and a FRQ-S Junior 1 Scholar. He received his PhD in Neuroscience in 2013 from Lyon 1 University (France, with Dr Barbara Tillmann and Dr Anne Caclin) where he used multimodal neuroimaging approaches (MEG, fMRI, EEG, iEEG) to study the brain dynamics related to auditory perception and working memory in humans.</p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>In 2014, he joined the Montreal Neurological Institute of McGill University, first as a Fyssen, then as a Banting postdoctoral Fellow in the Robert Zatorre and Sylvain Baillet groups. His work focuses in the identification of the causal links between the dynamics of neural activity and human cognitive functions. In his research he combines multimodal neuroimaging data and information-based neuromodulation methods (i.e., online TMS/visual stimulation configured to match specific ongoing spatiotemporal patterns of neural activity) with the aim of causally enhancing cognitive abilities in health and disease. His overarching interests are in the translational impact of such optimized neuromodulation approaches as personalized therapeutic tools and preventive solutions for pathology-associated neurocognitive deficits.  Since 2013 his worked resulted in 17 publications , including 10 as first author in high impact journals such as Science, Neuron, Brain H-index 11 number of citations >500. Dr Albouy is funded by NSERC (PI) , FRQS (PI), CIHR (co-PI) and CIFAR (HBHL, collaborator) for a total > 2M$.</p>
+                </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+        <li>
+            <div class="col-4">
+              <img src="images/team/team-shirley-fecteau.jpg" class="team-image" alt="this is an image of Shirley Fecteau"><br>
+              <p class="team-name">Shirley Fecteau, Université Laval</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Shirley Fecteau is an Associate Professor and holds a Canada Research Chair in Cognitive Neuroplasticity at Université Laval. She earned a PhD degree in Biomedical Sciences from University of Montreal (honor, 2005) and trained as a postdoctoral fellow and instructor at Harvard Medical School (2005-2010). She serves as Deputy Editor for Brain Stimulation Elsevier and as an Editor for Scientific Reports Nature Publishing Group. She is also Faculty at the Harvard CME Course in Transcranial Magnetic Stimulation since 2005.</p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>Her research primarily aims at using non-invasive neuromodulation (transcranial magnetic and electric stimulation) combined with neuroimaging (magnetic resonance imaging and electroencephalography) to understand human behaviours, cognition and psychiatric symptoms, especially in addiction, anxiety and depression. Her work has been funded by NSERC, CIHR, National Defence, QBIN, and various foundations.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-isabelle-blanchette.jpg" class="team-image" alt="this is an image of Isabelle Blanchette"><br>
+              <p class="team-name">Isabelle Blanchette, Université Laval</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Isabelle Blanchette is a full professor at the École de psychologie of Université Laval. She obtained her PhD in Experimental Psychology from McGill University in 2000. After postdoctoral research at Birkbeck College, University of London, she started her career at the University of Manchester, before returning to Canada to take up a position at the Université du Québec à Trois-Rivières in 2009, where she founded the CogNAC research group (Cognition, Neuroscience, Affect et Comportement).</p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>Isabelle Blanchette’s research examines the link between cognition and emotion, using behavioural, psychophysiological and electrophysiological methods. Her work has helped to understand the effect of emotion on formal reasoning, as well as other mechanisms such as working memory and attention, notably using EEG/ERP. He research has also examined the links between trauma, PTSD, and cognitive function in different populations including victims of sexual abuse, police officers, and civilians exposed to war and political violence. She has worked on the cognitive correlates of the 1994 genocide against the Tutsis. Her work has been funded by NSERC, SSHRC, FRQNT, FRQS. She was associate editor of Cognition & Emotion and currently a member of several editorial boards.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-celyne-bastien.jpg" class="team-image" alt="this is an image of Célyne Bastien"><br>
+              <p class="team-name">Célyne Bastien, Université Laval</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Célyne Bastien studies the psychological and physiological aspects of insomnia to understand its effects on people and to find ways of treating them. She is particularly interested in the mechanisms of sleep protection (which make it possible to remain asleep) and compares the objective quality (measured in the laboratory) and the subjective quality (reported by the individuals) of sleep in good sleepers and insomniacs.</p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>Dr. Bastien studies the activity of the brain during sleep by electroencephalogram, which allows her to identify sleep characteristics of insomniacs that distinguishes it from the sleep of good sleepers. Neurophysiological and neuropsychological measures are also used to compare the objective and subjective quality of sleep and its perception. These measures allow for personalized interventions to help people adopt behaviors and attitudes that promote sleep.<br><br>
+                Dr. Bastien has conducted studies showing that the brains of insomniacs remain in a state of hypervigilance during sleep, and that these people respond differently to stimuli (sound or visual) during sleep, but also while awake.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-anne-gallagher.jpg" class="team-image" alt="this is an image of Anne Gallagher"><br>
+              <p class="team-name">Anne Gallagher, Université de Montréal</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Anne Gallagher holds a Canada Research Chair (CRC) in Child Neuropsychology and Brain Imaging for her work on brain development and language and cognitive functioning in children at high-risk for neurodevelopmental disabilities and multimodal neuroimaging (mostly near infrared spectroscopy, or NIRS, and electroencephalography, or EEG). Dr. Gallagher is an Associate Professor in the Department of Psychology at the Université de Montréal. She is also a scientist at CHU Sainte-Justine, where she directs the cutting-edge, CFI-funded Neurodevelopmental Optical Imaging Laboratory (www.lionlab.umontreal.ca). She has received substantial new investigator salary awards from CIHR (2013–2019), FRQS (2013–2019) and now CRC (2019-2024).</p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>As a pediatric neuropsychologist, she has built a multidisciplinary and innovative research program including clinicians and researchers with applied or methodological backgrounds. Using cutting-edge multimodal neuroimaging, a significant part of her research program is dedicated to language and brain development in clinical populations. Her research in epilepsy (SickKids/CIHR, FRQS, Savoy Foundation funded) has pioneered the development of presurgical imaging techniques using NIRS-EEG (Montreal) and MEG-EEG (Boston). She led the implementation of these methods in clinical environments (CHU Sainte-Justine, CHUM, Massachusetts General Hospital) where they are now routinely used with patients with severe epilepsy, reducing the need for or extent of invasive investigations, thus significantly decreasing the risk of surgical complications. Anne was awarded the 2016 Junior Investigator Award by the Canadian League Against In 2013, she started a large research initiative on the neurodevelopmental outcomes of children with congenital heart disease (HSFC, RBIQ funded). More specifically, this work aims to better understand the impact of congenital heart disease on neurodevelopment, identify early neuroimaging markers predictive of neurodevelopmental outcomes, and provide early intervention in young children at high risk of disabilities. In the same line of research, she identified early EEG markers of language development in preemies, work that propelled a large starting project on the impact of neonatal hypoglycemia on the visual and cognitive development of preemies (CIHR funded).</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-sarah-lippe.jpg" class="team-image" alt="this is an image of Sarah Lippé"><br>
+              <p class="team-name">Sarah Lippé, Université de Montréal</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description"><!-- Sarah Lippé Ph.D, neuropsychologist and associate professor at the Psychology Department at University of Montreal, studies risk factors for neurodevelopmental disorders and the diversity of trajectories of outcomes. She was trained as a post-doctoral fellow at Neurospin, CEA in Paris where she developed a neuroimaging research program. EEG is her main investigation tool as she develops brain activity biomarkers sensitive to brain maturation and cognitive development.  -->
+              Neurodevelopmental disorders prevalence reach 10 to 17% in the general population. Their repercussions are life long and reduce significantly academic achievement, employability and quality of life. My research contributes to our ability to identify cognitive impairments early during development and disentangles the mechanisms leading to learning deficits, in order to target efficient interventions. 
+              </p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p><!-- She currently uses advanced imaging signal processing and modern statistics to delineate etiologic mechanisms leading to abnormal neurodevelopment. She was amongst the first to advocate for novel strategies in assessing outcomes in clinical trials and other intervention means aiming at improving cognition in children. Dr. Lippé is currently leading EEG phenotyping of two international Fragile X Syndrome and Autism Spectrum Disorders clinical trials. She is continuously supported by NSERC, CIHR, FRQ-S, Brain Canada and foundations. She has published >65 peer-reviewed articles and >190 abstracts, with several papers cited >100 times and covered widely by the press. Dr. Lippé has experience in leading large research and academic teams. As a mother of a child with neurodevelopmental disorders and as a clinical neuropsychologist, she is involved in several community based initiatives to serve these children. -->
+                My work culminates to the empirical evidence that learning brain responses and network connectivity can be measured during infancy, and that their alterations predict cognitive impairments severity in several neurodevelopmental disorders. Published in neuroscience and medical journals, my work has revealed the developmental course of sensory brain responses, signal complexity and connectivity, elucidated networks of sensory learning and proved the usefulness of EEG brain responses to study atypical learning and network disturbances. Currently, I lead EEG phenotyping of two international Fragile X Syndrome and Autism Spectrum Disorders clinical trials involving multidisciplinary teams of researchers from the POND, the EU-AIMS and the MIND institute, creating bridges between international teams involved in neurodevelopmental disorders cohorts in order to better understand risks and resilience factors favoring intervention responses. I also innovatively deeply phenotyped hundreds of children with genetic risks (Brain Canada cohorts) to better understand trajectories to target as early as possible children that would benefit from timely interventions. I have more than 73 scientific publications, more than 200 citations per year since 2018 and several articles being cited more than 100 times. My leadership in the study of neurodevelopmental disorders is confirmed by several awarded grants and by the recognition from my peers through their invitations to collaborate on national network initiatives and clinical trials. Thanks to the Brain Plasticity and Plasticity Analysis platform (BAPA) and collaborations with Dre Annette Schenck, my scientific program now includes translational research, benefiting from the human, mice and Drosphophila models research, fostering discoveries on the mechanisms behind neurodevelopmental disorders and on treatments. My contributions include expertise in analyses pipeline developments, cohort testing and data sharing.
+                </p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-ingrid-johnsrude.jpg" class="team-image" alt="this is an image of Ingrid Johnsrude"><br>
+              <p class="team-name">Ingrid Johnsrude, University of Western Ontario</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Dr Johnsrude (PhD McGill, 1997) is Professor and Western Research Chair at Western University, and Director of Western’s Brain and Mind Institute. She trained as a clinical neuropsychologist but for the last 20 years has been using neuroimaging (particularly EEG and fMRI) and psychoacoustic methods to study the importance of knowledge in guiding auditory and speech perception. Dr Johnsrude is the author of more than 100 peer-reviewed publications which have been cited over 22,500 times (Google Scholar). She has won multiple awards for her research, including the EWR Steacie Fellowship (2009). </p>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-adrian-owen.jpg" class="team-image" alt="this is an image of Adrian Owen"><br>
+              <p class="team-name">Adrian Owen, University of Western Ontario</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Adrian M. Owen OBE, PhD is currently a Professor of Cognitive Neuroscience and Imaging in the Departments of Physiology & Pharmacology and Psychology at the University of Western Ontario, Canada. He also directs the Azrieli program in Brain, Mind, and Consciousness funded by the Canadian Institute for Advanced Research (CIFAR) and is on the Executive Committee of the CFREF funded initiative BrainsCAN at the University of Western Ontario, Canada.    </p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>Dr. Owen was previously the Assistant Director of the Medical Research Council Cognition and Brain Sciences Unit at Cambridge University and the Canada Excellence Research Chair in Cognitive Neuroscience and Imaging at Western University.  His research combines structural and functional neuroimaging with neuropsychological studies of brain-injured patients and has been published in many of the world’s leading scientific journals, including Science, Nature, The New England Journal of Medicine and Lancet.  Adrian Owen is best known for showing that functional neuroimaging can reveal conscious awareness in some patients who appear to be entirely vegetative and can even allow some of these individuals to communicate their thoughts and wishes to the outside world. These findings have attracted widespread media attention on TV, radio, in print and online and have been the subject of many TV and radio documentaries. Dr. Owen has played multiple editorial roles, including 8 years as Deputy Editor of The European Journal of Neuroscience. He has published over 300 peer-reviewed articles and chapters and a best-selling popular science book ‘Into the Gray Zone: A Neuroscientist Explores the Border Between Life and Death. Dr. Owen was recently awarded Officer of the Most Excellent Order of the British Empire (OBE) in the Queen’s Honors List, 2019, for services to scientific research.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-jorge-bosch-bayard.jpg" class="team-image" alt="this is an image of Jorge Bosch-Bayard"><br>
+              <p class="team-name">Jorge Bosch-Bayard, McGill University</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Jorge F. Bosch-Bayard worked as a computer scientist at the Cuban Neuroscience Center from 1984-2014, and a Senior Researcher of the Cuban Academy of Sciences from 2009. From 2014 to 2018, he was an Associate Researcher at the Institute for Neurobiology, UNAM, Mexico. Since 2019, he has been a Research Assistant at the MNI in Canada. He works on methods for the processing, analysis and statistical of multimodal neuroimages (EEG/MEG, MRI, fMRI, DWI). </p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>He specializes in (i) quantitative EEG analysis for the estimation of the current density at the EEG generators in the brain ( ii) statistical methods focused on high dimensional data sets (iii) methods for the estimation of brain connectivity, based on the analysis of correlation matrices as well as on the flow of information among different brains sites, derived from multivariate auto-regressive time series models (iv) algorithms for solving the leakage problem at the EEG sources. (v) robust algorithms for solving the classification problem in high dimensional spaces with small samples. He is an organizer of the Cuban Human Brain Mapping project, responsible for data collection, curation, analysis and statistical assessment of the results.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-jean-gotman.jpg" class="team-image" alt="this is an image of Jean Gotman"><br>
+              <p class="team-name">Jean Gotman, McGill University</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Dr. Jean Gotman is a Professor of Neurology and Neurosurgery at the Montreal Neurological Institute. He is recipient of the Pierre-Gloor Award from the American Clinical Neurophysiology Society (2000), the Epilepsy Research Recognition Award for Clinical Sciences from the American Epilepsy Society (2005), the Wilder Penfield Award from Canadian League against Epilepsy (2006), the Ambassador for Epilepsy from International League against Epilepsy (2015), and the Jasper Award for lifetime achievement from the American Clinical Neurophysiology Society (2019). </p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>Dr. Gotman’s laboratory investigates the mechanisms of generation of epileptic discharges as recorded in the electroencephalogram (EEG) of epileptic patients. His work aims to improve both our understanding of epileptogenesis and our diagnostic techniques. Combining functional imaging techniques (fMRI) and EEG in a novel non-invasive approach, his group studies the brain regions in which abnormal activity is taking place when a discharge occurs. The laboratory also analyzes patterns of High Frequency Oscillations recently discovered in the EEG, which could improve the ability to localize epileptogenic regions and to understand better epileptogenesis. </p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-birgit-frauscher.jpg" class="team-image" alt="this is an image of Birgit Frauscher"><br>
+              <p class="team-name">Birgit Frauscher, McGill University</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Dr. Birgit Frauscher, Associate Professor of Neurology at McGill University, is a Board-certified Neurologist with a subspecialty training in Clinical Neurophysiology, Epilepsy and Sleep and a research background in clinical neuroscience. She is the director of the Analytical Neurophysiology Lab (https://mcgill.ca/frauscher-lab/), and serves as attending epileptologist and neurophysiologist coordinating the intracranial EEG program at the Montreal Neurological Institute & Hospital. </p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>She has built an internationally recognized research program that seeks to identify new ways to identify the epileptogenic zone using EEG with the ultimate aim to achieve a more accurate, less invasive, and time-saving diagnosis of epilepsy. Her major achievements related to this application are the creation of a first 3D atlas of physiological brain activity using invasive intracranial EEG (iEEG) in order to better delineate normal from abnormal iEEG activity as well as the development of novel ways for identification of the epileptogenic zone. Her research has been awarded by both national and international awards (i.e. Michael Prize 2019 of the International League against Epilepsy, salary award of the Fonds de Recherche au Quebec –  Santé 2018-2021, European Young Investigator Award 2018, Ernst Niedermayer Award 2015 of the Austrian Epilepsy Society). Her program is supported through diverse funders (e.g. FRQS, CIHR, Savoy Epilepsy Foundation). She has published >135 peer-reviewed articles (53 as first/senior author) with an h-index of 47.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-mayada-elsabbagh.jpg" class="team-image" alt="this is an image of Mayada Elsabbagh"><br>
+              <p class="team-name">Mayada Elsabbagh, McGill University</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Dr. Mayada Elsabbagh is Assistant Professor (Tenure Track) in Neurology and Neurosurgery at The Neuro of McGill University. She holds appointments as a Research Scientist at the McGill University Health Centre and the Douglas University Mental Health Institute where her program is integrated with routine care. Her research focuses on understanding the root causes of autism and tracing its developmental pathways. The approach combines innovative research with the mission of accelerating translation of scientific discoveries into community impact. </p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>Dr. Elsabbagh’s contributions include the discovery of very early brain function markers for autism prior to the onset of behavioural signs. She has supported the successful launch of several collaborative research and translational networks aimed at accelerating the pace of discovery in autism. This includes the Transforming Autism Care Consortium (TACC), a Quebec research network supported by FRQS and several community partners. She is also active in global efforts to improve evidence-based practice in the community and capacity building in low- and middle-income countries. The public value and social relevance of Dr. Elsabbagh’s research has been recognized through various awards including the Neville Butler Memorial Prize and the British Psychological Society Neil O’Connor Prize. </p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-stefon-von-noordt.png" class="team-image" alt="this is an image of Stefon von Noordt"><br>
+              <p class="team-name">Stefon van Noordt, McGill University</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Dr. Stefon van Noordt is a Research Associate and Scientific Team Lead of the Azrieli Centre for Autism Research at the Montreal Neurological Institute, McGill University. He received his undergraduate and graduate training at Brock University, and completed postdoctoral fellowships at the Yale University Child Study Centre and Montreal Neurological Institute. </p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>His research primarily uses EEG and eye-tracking technologies to examine the developmental neural underpinnings of sensory and cognitive processing, in particular how they relate to risk and outcome in autism and similar neurodevelopmental disorders. In addition, his work focuses on ‘big data’ – large data sets that can be analyzed to reveal complex multivariate patterns – to identify reliable EEG biomarkers that relate to to risk factors, early diagnosis, and treatment outcomes. He has contributed to the development of novel paradigms, standardized methods for batch pre-processing of EEG data, integrated platforms for harmonizing multi-site EEG data, and robust statistics for single trial and single subject analyses. His work has been funded by CIHR, NSERC, TACC/FRQS, and most recently through a NARSAD Young Investigator Grant from the Brain and Behaviour Foundation.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-stefanie-blain-moraes.jpg" class="team-image" alt="this is an image of Stefanie Blain-Moraes"><br>
+              <p class="team-name">Stefanie Blain-Moraes, McGill University</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Dr. Stefanie Blain-Moraes is the Canada Research Chair in Consciousness and Personhood Technologies, and the director of the Biosignal Interaction and Personhood Technology lab at McGill University.  An assistant professor in the School of Physical and Occupational Therapy, she is trained in rehabilitation engineering (Ph.D., University of Toronto) and in biomedical engineering (B.A.Sc., University of Toronto).    </p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>Her research applies physiological signal processing techniques and assistive technology design principles to address the needs of non-communicative individuals and their care providers.  The overall objectives of her research are: 1) To advance the understanding of the neurophysiological and physiological basis of human consciousness and interaction and 2) to translate this understanding into technologies that improve the quality of life of non-communicative persons and their caregivers.  She is currently using high-density EEG combined with neuromodulation to develop diagnostic and prognostic measures for patients in disorders of consciousness.  She has been a Principle Investigator on grants from NSERC, CIHR and SSHRC.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-farzan-faranak.jpg" class="team-image" alt="this is an image of Faranak Farzan"><br>
+              <p class="team-name">Faranak Farzan, Simon Fraser University</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Dr. Farzan is the Chair in Technology Innovations for Youth Addiction Recovery and Mental Health and Assistant Professor at School of Mechatronic Systems Engineering at Simon Fraser University (SFU) Dr. Farzan is the Founder and Scientific Director of Centre for Engineering-Led Brain Research (eBrain Lab), a major Core Facility at SFU and Surrey Memorial Hospital. She is also Director of an embedded neurotechnology research laboratory at John Volken Academy, a long-term addiction recovery program in City of Surrey. </p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>Dr. Farzan is also the EEG lead of the Canadian Biomarker Integration Network in Depression. Prior to joining SFU, Dr. Farzan was Assistant Professor of Psychiatry at University of Toronto, and Independent Scientist at Centre for Addiction and Mental Health, and she continues to hold appointments at both Institutes. Dr. Farzan has obtained her Bachelor of Engineering in Dual Degree of Electrical and Biomedical Engineering from McMaster University in 2006, her PhD in the Collaborative Program of Biomedical Engineering and Medical Science from University of Toronto in 2010. She obtained her Postdoctoral training in Cognitive Neurology from Harvard Medical School in 2013. Dr. Farzan is leading an interdisciplinary research program across several established disciplines of engineering, neuroscience, computer science and psychiatry. Her research program is aimed at development and practical implementation of neurotechnology for studying brain health and function, and for diagnosis and treatment of neuropsychiatric disorders particularly in youth. Dr. Farzan has been a pioneer in establishing a brain mapping methodology that involves concurrent combination of Transcranial Magnetic Stimulation and Electroencephalography (TMS-EEG). Dr. Farzan’s research program has received funding from prestigious agencies such as Michael Smith Foundation for Health Research, CIHR, NIMH, NSERC, CFI, NARSAD, Brain Canada, Kids Brain Health Network, and GRAMMY Foundation.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-sean-hill.jpg" class="team-image" alt="this is an image of Signe Bray"><br>
+              <p class="team-name">Sean Hill, University of Toronto</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Dr. Sean Hill is the Director of the Krembil Centre for Neuroinformatics, Senior Scientist at the Centre for Addiction and Mental Health (CAMH), and Professor at the University of Toronto. Dr. Hill is a computational neuroscientist with experience in building large-scale computational models of brain circuitry. </p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>The Centre collaborates with clinicians and researchers, employing neuroinformatics, artificial intelligence, and multiscale modeling, to develop data-driven definitions of brain disorders, predict patient trajectories, and transform mental health care. Dr. Hill applies large-scale data integration, neuroinformatics, multiscale brain modeling and machine learning to improve our understanding and treatment of mental health disorders.The Centre’s mandate is to accelerate global collaborations in brain science using the power of big data and brain modelling to fundamentally change how mental illness is understood.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-signe-bray.jpg" class="team-image" alt="this is an image of Signe Bray"><br>
+              <p class="team-name">Signe Bray, University of Calgary</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Dr. Signe Bray is an Associate Professor in the Department of Radiology at the University of Calgary and the Scientific Director of the Child and Adolescent Imaging Research (CAIR) Program based at the Alberta Children's Hospital. She is originally from Ontario, Canada, and completed undergraduate training at the University of Waterloo, graduate work at the California Institute of Technology and postdoctoral training at Stanford University and the University of Calgary.  </p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>Her research uses functional and structural magnetic resonance imaging (MRI) to study brain development and the effects of neurodevelopmental conditions, including Autism Spectrum and preterm birth, on the brain. She collaborates extensively with researchers in many areas of neurodevelopment and child and adolescent mental health. Her work has been funded by CIHR, NSERC and the SickKids Foundation.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-ashley-harris.jpg" class="team-image" alt="this is an image of Ashley Harris"><br>
+              <p class="team-name">Ashley Harris, University of Calgary</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Dr. Ashley D Harris is an Assistant Professor in the Department of Radiology at the University of Calgary and a full member of both the Hotchkiss Brain Institute and the Alberta Children’s Hospital Research Institute. She received her undergraduate degrees in Biological Engineering (BEng) and Biological Sciences (BSc) from Dalhousie University prior to receiving her PhD in Biomedical Engineering from the University of Calgary.</p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>Having completed post-doctoral fellowships at Cardiff University investigating functional MRI methods and at then at Johns Hopkins School of Medicine in magnetic resonance spectroscopy, she is now interested in using imaging to investigate the balance of excitation and inhibition in the brain in both typical, healthy development and aging as well as to understand clinical conditions. As such, EEG provides a method to investigate excitation and inhibition, particularly in challenging populations such as young children with developmental disorders who are not compliant with MR imaging. Her work is funded by NSERC, a New Frontiers Research Fund Exploration Award, the SickKids Foundation/CIHR as well as internal University of Calgary Reseach Grant, the McCaig Institute for Bone and Joint Research and Hotchkiss Brain Institute funding programs.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-erin-panda.jpg" class="team-image" alt="this is an image of Erin Panda"><br>
+              <p class="team-name">Erin Panda, Brock University</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Dr. Erin Panda is an Assistant Professor in the Department of Child and Youth Studies and the Co-Director of the Developmental Neuroscience Laboratory at Brock University. Originally from southern Georgian Bay Ontario, she received her undergraduate training at Queen’s University and her PhD from McGill University. She then completed two postdoctoral research fellowships at the Hospital for Sick Children (Sickkids) in Learning Disabilities and in Neurosciences and Mental Health. </p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>Her primary research area – Educational Neuroscience – uses EEG to understand how the brain processes language, and how these processes change with development, learning and remediation. She is particularly interested in tracking developmental changes to the functional brain networks that children use while reading, listening to speech and during attention tasks. Working in collaboration with community partners (e.g., local school boards), another arm of her research evaluates how evidence-based educational programs can improve learning outcomes, especially for children/youth who struggle with reading and/or attention. Her work has been funded by the Ontario Brain Institute, Quebec’s FQRSC and NSERC.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-ayda-tekok-killc.jpg" class="team-image" alt="this is an image of Ayda Tekok-Kilic"><br>
+              <p class="team-name">Ayda Tekok-Kilic, Brock University</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Dr. Tekok-Kilic is a clinical and cognitive neuroscientists whose major research focus is anxiety and attention deficit spectrum.  She studies cognitive, sensory and temperamental aspects of cognitive control and emotion regulation in youth and emerging adults with anxiety and attentional difficulties. Overarching goal of her program is to translate research into targeted assessments and interventions in mental health. </p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>She collaborates closely with local mental health agencies. She is the director of Developmental Neuroscience Laboratory (DNLab) housed in CHYS and Cognition and Anxiety Laboratory (CANLab) located at the Pathstone Children’s Mental Health Research Institute. Dr. Tekok-Kilic uses neuro-cognitive tests, self-report questionnaires and neurophysiological measures (EEG, eye-movements and pupillometry) in studying brain-cognition/emotion. Dr. Tekok-Kilic is a supporting core faculty of Brock U. Neuroscience undergraduate program.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-christine-lackner.jpg" class="team-image" alt="this is an image of Christine Lackner"><br>
+              <p class="team-name">Christine Lackner, Mount St Vincent University</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Christine Lackner did her PhD at Brock University under the direction of Dr. Sidney Segalowitz, an internationally recognized electrophysiologist receiving regular research support from the tri-council. Lackner has received tri-council funding to support both her doctoral studies (NSERC PGS-D, 2009-2012) and her ongoing program of research (SSHRC Explore). She is actively involved in large research projects funded by national (e.g., CIHR) and provincial (e.g., Ontario Brain Institute) funding bodies. </p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>Six of her seven publications in the last five years focus on cognitive-developmental electrophysiology, demonstrating her expertise in the subject matter which this proposal supports. Lackner's research focus is on understanding individual differences in self-regulation of behaviour and cognition across childhood, adolescence, and young adulthood using a neuroscientific and behavioural approach.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-karen-campbell.jpg" class="team-image" alt="this is an image of Alan Evans"><br>
+              <p class="team-name">Karen Campbell, Brock University</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Karen Campbell is an Assistant Professor and Canada Research Chair in the Department of Psychology at Brock University. She completed her PhD in Psychology at the University of Toronto, followed by postdoctoral fellowships at the University of Cambridge and Harvard University. </p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>Her research focuses on the cognitive and neural changes that accompany normal human aging. Specifically, she combines neuroimaging techniques (fMRI, EEG) with cognitive-behavioural methods (including eye-tracking) to determine how age differences in attentional control affect other cognitive processes (such as memory and language). Her work has been funded by NSERC, CFI, and the Ontario Ministry of Research, Innovation and Science (Early Researcher Award).</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-teena-willoughby.jpg" class="team-image" alt="this is an image of Teena Willoughby"><br>
+              <p class="team-name">Teena Willoughby, Brock University</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Dr. Teena Willoughby is a Professor in the Department of Psychology at Brock University and is the Associate Director of the Jack and Nora Walker Centre for Lifespan Development Research. She received her undergraduate training at Western University and PhD from University of Waterloo. She followed that with a Postdoctoral Fellowship at the University of Toronto. </p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>Her research focuses on adolescent development, particularly addressing two main questions: (1) Is adolescence a sensitive period for development (e.g., brain development, peer sensitivity, emotional reactivity), resulting in both unique vulnerabilities and opportunities, and (2) What predicts the individual differences found among adolescents with regard to health-risk behaviors and mental health. To address these questions, she conducts longitudinal studies using a variety of tools, including EEG/ERP, impedance cardiography and heart rate variability, actigraphs, and surveys. Her work has been funded by SSHRC, NCE, CFI, OIT, CIHR, and private foundations.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-gavin-winston.jpg" class="team-image" alt="this is an image of Gavin Winston"><br>
+              <p class="team-name">Gavin Winston, Queen's University</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Dr Gavin Winston is an Associate Professor in the Department of Medicine at Queen’s University and a faculty member of the Centre for Neuroscience Studies since 2019. He is an Honorary Associate Professor in the UCL Queen Square Institute of Neurology, Queen Square, London where he was previously an MRC Clinician Scientist (2015-2018).</p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>Dr Winston undertook his medical degree at the University of Cambridge and University of Oxford and his subsequent neurology training was at the National Hospital for Neurology and Neurosurgery (NHNN), Queen Square and the Royal Free Hospital, London. He received his PhD in Neuroimaging of Epilepsy from University College London supported by an MRC Clinical Research Training Fellowship and supervised by Professor John Duncan.<br>
+                <br>He received the Sir Peter Mansfield Prize for innovative technical developments in the field of magnetic resonance in medicine and biology from the British Chapter of the ISMRM in 2011 and his work has featured in the BBC television programme "How Science Changed Our World" describing the top ten scientific breakthroughs in the past 50 years. He was awarded an American Epilepsy Society Young Investigator Award and ILAE Europe Leadership Development Scholarship in 2018.<br>
+                <br>Dr Winston was a member of UCL Academic Board (2010-2016) and undertakes peer review for over 30 international journals and grant awarding bodies and has been on the editorial board of Quantitative Imaging in Medicine and Surgery since its inception. He has published around 50 peer-reviewed papers, chaired sessions at international conferences, given invited lectures internationally and also spoken at events aimed at the general public.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+        </ul>
+        <div id="map-anchor" class="map">
+          <h2 class="text-center">EEGNet research network</h2>
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=12QiKSZj9WJ-6HRktA2_iJqBBc7gszm2A" width="640" height="480"></iframe>
+        </div>
+        <div class="section-content" id="publications-anchor">
+        <h1 class="text-center">Related Publications</h1>
+        <ul>
+          <li>Bosch-Bayard, J. et al., 2020. A Quantitative EEG Toolbox for the MNI Neuroinformatics Ecosystem: Normative SPM of EEG Source Spectra. Front. Neuroinform. <a href="https://doi.org/10.3389/fninf.2020.00033">doi:10.3389/fninf.2020.00033</a></li>
+          <li>Frauscher, B. et al., 2018. Atlas of the normal intracranial electroencephalogram: Neurophysiological awake activity in different cortical areas. Brain. <a href="https://doi.org/10.1093/brain/awy035">https://doi.org/10.1093/brain/awy035</a></li>
+          <li>van Noordt, S., et al. 2020 EEG-IP: an international infant EEG data integration platform for the study of risk and resilience in autism and related conditions. Mol Med 26, 40 (2020). <a href="https://doi.org/10.1186/s10020-020-00149-3">doi:10.1186/s10020-020-00149-3</a></li>
+        </ul>
       </div>
-    </div>
-  </section>
-  <div class="clear-all"></div>
+       </div>        
+    </section>
+    <div class="clear-all"></div>
 
-<!-- Additional partners and sponsors -->
-  <section>
-    <div class="section-content flex partners flex-center end">
-      <h1 class="full-width text-center">Additional Partners and Sponsors</h1>
-      <h2 class="full-width text-center">Those that made the BigBrain possible</h2>     
-      <a href="https://www.humanbrainproject.eu/"><img src="images/partner-hbp.jpg"></a>
-      <a href="https://www.mcgill.ca/hbhl/"><img src="images/partner-hbhl.png"></a>
-      <a href="http://ludmercentre.ca"><img src="images/logo-ludmer.png"></a> 
-      <a href="http://mcin.ca"><img src="images/partner-mcin.png"></a> 
-      <a href="https://www.fz-juelich.de/"><img src="images/logo-julich.jpg"></a>
-      <a href="https://www.mpg.de/149614/kognition_neuro"><img src="images/logo-max-planck.png"></a>
-      <a href="https://www.helmholtz.de/en/ "><img src="images/logo-helmholtz.png"></a> 
-      <!-- <a href="https://cai.centre.uq.edu.au/"><img src="images/logo-queensland.png"></a>  -->
-      <a href="https://www.canarie.ca/"><img src="images/logo-canarie.jpg"></a> 
-      <a href="https://www.computecanada.ca/"><img src="images/logo-compute-canada.jpg"></a> 
-      <a href="https://www.calculquebec.ca/"><img src="images/logo-calculquebec.jpg"></a> 
-      <a href="https://nrc.canada.ca/"><img src="images/logo-nrc.jpg"></a> 
-      <a href="https://www.ands.org.au//"><img src="images/logo-ands.png"></a> 
-      <a href="https://cbrain.ca"><img src="images/logo-cbrain.png"></a> 
-      <a href="https://www.mcgill.ca/neuro/"><img src="images/logo-neuro.jpg"></a> 
-    </div>
-  </section>
-  <div class="clear-all"></div> 
+      
+   <!-- footer -->
 
-  <!-- footer -->
-  <footer>  
-    <blockquote class="quote-holder">
-      <img class="quote-image" src="images/icon-aquisition.png">
-      <p class="quote-text">An exciting new opportunity.</p>
-    </blockquote>
-    <div class="section-content flex">
-      <a href="https://www.fz-juelich.de/">
-        <img src="images/logo-julich.jpg">
-      </a>
-      <a href="https://mcgill.ca/">
-        <img src="images/logo-mcgill.png">
-      </a>
-    </div>
-    <p class="center" style="color: #fff;">For information please email us at <a href="mailto:info@bigbrainproject.org">info@bigbrainproject.org</a>
-  </footer>
-  <div class="brand-border-1"></div>
-  <div class="brand-border-2"></div>
-  <div class="brand-border-3"></div>
+    <footer>  
+      <div class="section-content flex flex-align-center">
+        <div class="logos">
+          <a href="https://braincanada.ca"><img src="images/logo-braincanada.png" alt="BrainCanada logo"></a>
+          <a href="http://ludmercentre.ca"><img src="images/logo-ludmer.png" alt="Ludmercentre logo"></a>
+          <a href="https://mcgill.ca"><img src="images/logo-mcgill.png" alt="McGill logo"></a>
+          <a href="https://www.mcgill.ca/neuro/"><img src="images/logo-neuro.jpg" alt="the Montreal Neurological Institute-Hospital logo"></a>
+          <a href="https://conp.ca"><img src="images/logo-conp-long.png" alt="the Canadian Open Neuroscience Platform logo"></a>
+          <a href="https://www.ulaval.ca/"><img src="images/logo-laval.png" alt="the University of Laval logo"></a>
+          <a href="https://brocku.ca/"><img src="images/logo-brock.png" alt="the Brock University logo"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
 </div>
-
-<script>
-  $(function(){
-    $(".accordian h3").click(function(e){
-    $(".accordian ul p.answer").slideUp();
-      if ($(this).next().is(":hidden")){
-      $(this).next().slideDown();
-      }
-    });
-  });
-</script>
-
-<script src="js/lightbox.js"></script>
-
 <script>
   $(function(){
     $("#showmenu").click(function(e){
@@ -781,42 +493,53 @@
     });
   });
 </script>
-
-<script type="text/javascript">
-  $(function() {
-    $('.item').matchHeight();
-  });
+<script>
+$('.map')
+  .click(function(){
+      $(this).find('iframe').addClass('clicked')})
+  .mouseleave(function(){
+      $(this).find('iframe').removeClass('clicked')});
 </script>
-
 <script type="text/javascript">
-   $(document).on('ready', function() {
-    $('#slick-slider').slick({
-      dots: true,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 6000,
-      draggable: true,
-      mobilefirst: true,
-      pauseonhover: true,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1500,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplayspeed: 4000,
-            infinite: false,
-            dots: true
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-  });
+  // The function actually applying the offset
+function offsetAnchor() {
+  if (location.hash.length !== 0) {
+    window.scrollTo(window.scrollX, window.scrollY - 100);
+  }
+}
+
+// Captures click events of all <a> elements with href starting with #
+$(document).on('click', 'a[href^="#"]', function(event) {
+  // Click events are captured before hashchanges. Timeout
+  // causes offsetAnchor to be called after the page jump.
+  window.setTimeout(function() {
+    offsetAnchor();
+  }, 0);
 });
+
+// Set the offset when entering page with hash present in the url
+window.setTimeout(offsetAnchor, 0);
 </script>
 
+<!-- for sticky second nav -->
+<!-- <script>
+$("document").ready(function($){
+    var $stick = $('#second-nav');
+    var $pad = $('#stickypad');
+    var $win = $(window);
+    var winH = $win.height() + 0;   // Get the window height.
+
+    $win.on("scroll", function () {
+        if ($(this).scrollTop() > winH ) {
+            $stick.addClass("stick");
+            $pad.addClass("stick-pad");
+        } else {
+            $stick.removeClass("stick");
+            $pad.removeClass("stick-pad");
+        }
+    }).on("resize", function(){ // If the user resizes the window
+       winH = $(this).height(); // you'll need the new height value
+    });
+});
+</script> -->
 </body></html>

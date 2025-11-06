@@ -1,380 +1,103 @@
 <!doctype html>
 <html>
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145481065-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-145481065-1');
-</script>
 <!-- favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/site.webmanifest">
-<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-<meta name="msapplication-TileColor" content="#da532c">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-<meta name="author" content="Derek Lo @ 3design-dlo.com">
 <!-- general -->
-<link rel="stylesheet" type="text/css" href="slick/slick.css">
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+<meta charset="utf-8">
+<title>EEGNet</title>
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="EEGNet">
+<meta name="keywords" content="EEGNet, neuroscience, electrophysiology, encephalography, Research, Big Data, Science, Medicine, BIDS">
+<meta name="author" content="Derek Lo @ 3design-dlo.com">
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 <link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
-<link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
-<link href="css/lightbox.css" rel="stylesheet" />
-<meta charset="utf-8">
-<title>the BigBrain</title>
-<meta name="viewport" content="width=device-width">
-<meta name="description" content="This is the website of the BigBrain Project.">
-<meta name="keywords" content="Neuro, Brain, Research, Big Data, Science, Medicine">
-<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="js/drop-down.js"></script>
-<script src="js/jquery.matchHeight.js" type="text/javascript"></script>
-<script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 <div id="main-wrapper">
-  <div class="social-media">
-    <a href="https://twitter.com/BigBrainProject" class="tooltip">
-      <i class="fab fa-twitter-square"></i>
-      <span class="tooltiptext">Twitter</span>
-    </a>
-    <a href="mailto:info@bigbrainproject.org" class="tooltip">
-      <i class="fas fa-envelope-square"></i>
-      <span class="tooltiptext">Email</span>
-    </a>
-    <a href="#main-wrapper" class="tooltip">
-      <i class="fas fa-arrow-up"></i>
-      <span class="tooltiptext">Top</span>
-    </a>
-  </div>
   <!-- navigation -->
+
   <nav class="site-nav">
-    <div class="brand-border-1"></div>
-    <div class="brand-border-2"></div>
-    <div class="brand-border-3"></div>
     <div class="nav-container">
-      <div class="branding active"><a href="index.html">BigBrain Project</a></div>
+      <a href="index.html"><img width="70%" height="70%" src="images/logo-eeg2.png" class="logo bottom active" alt="EEGNet logo"></a>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
-        <li class="nav-item"><a href="hiball.html"><strong>HIBALL</strong></a></li>
-        <li class="nav-item"><a href="#!">About</a>
-          <ul class="nav-dropdown">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="references.html">References</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a href="maps-and-models.html">Maps & Models</a></li>
-        <li class="nav-item"><a href="tools-and-services.html">Tools & Services</a></li>
-        <li class="nav-item"><a href="#!">Community</a>
-          <ul class="nav-dropdown">
-            <li><a href="community.html">Our Community</a></li>
-            <li><a href="news.html">News & Events</a></li>
-            <!-- <li><a href="#!">Teaching</a></li> -->
-            <li><a href="https://bigbrain-forum.loris.ca/">Forum</a></li>
-          </ul>
-        </li>
+       <li class="nav-item"><a href="about.html">About</a></li>
+       <li class="nav-item"><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
   </nav>
-  <!-- intro section -->
-  <section class="hero hero-pic">
-    <div class="grid-container">
-      <div class="hero-content-grid">
-        <div class="hero-content-container">
-          <h1>Creating the next generation of highly detailed human brain models by building  on the  BigBrain - the first openly accessible, microscopic resolution 3D model of the human brain.</h1>
-          <div class="hero-flex">
-            <!-- <a href="news.html"><button>read about the history & vision</button></a> -->
-            <a href="https://bigbrain.humanbrainproject.org/"><button>view visualization data in browser</button></a>
-            <a href="maps-and-models.html#download"><button>access the dataset</button></a>
-          </div>
-          <div class="hero-logos">
-            <div class="flex-center">
-              <a class="hero-logos-link" href="https://www.fz-juelich.de/">
-                <img src="images/logo-julich.png">
-              </a>
-              <a class="hero-logos-link" href="https://mcgill.ca/">
-                <img src="images/logo-mcgill.png">
-              </a>          
-            </div>
-          </div>
-        </div>
+  <div id="prompt" title="scroll down for more info">▼</div>
+  <div class="content-wrapper">
+    <!-- hero section -->
+    <section class="title-holder">
+      <video autoplay muted loop id="myVideo" poster="images/background-c-poster.png">
+        <source src="images/background-720c.mp4" alt="This is a video of a eeg background">
+        <img src="images/background-c-poster.png" title="your browser does not support video">
+        <!-- https://www.shutterstock.com/video/clip-22846555-abstract-background-animation---brain-function-eeg -->
+      </video>
+      <div class="title-content">
+        <img src="images/logo-eeg2.png" class="logo-hero" alt="EEGNet logo">
+        <p class="font-shadow-black font-white">Collaborative EEG platform for advancing neuroscience</p>
       </div>
-    </div>
-  </section>
-  <div class="clear-all"></div>
+    </section>
+    <div class="clear-all"></div>
 
-  <section class="lt-grey-bg">
-    <div class="section-content lt-grey-bg">
-      <h1 class="full-width text-center">News About the BigBrain</h1>
-      <div id="slick-slider-2" class="slider">
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="cards">
-            <a class="twitter-timeline" data-width="100%" data-height="350" href="https://twitter.com/BigBrainProject?ref_src=twsrc%5Etfw">Tweets by BigBrainProject</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </div>
+    <!-- intro section -->
+    <section>
+      <div class="section-content">
+        <div class="col-2 flex">
+          <img src="images/eeg-image.png" class="infographic" alt="Infographic showing an eeg">
         </div>
-        <!-- template -->
-        <!-- <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="cards">
-            <img src="" class="card-image-square">
-            <div class="tool-name"></div>
-            <div class="tool-maker"><em>date:</em></div>
-            <div class="tool-description">
-            </div>
-            <a href="" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a><br>
-          </div>
-        </div> -->
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="cards">
-            <img src="images/news/research_day_presenter_nerve_tree.png" class="card-image-square">
-            <div class="tool-name">Virtual HBHL Research Day 2020</div>
-            <div class="tool-maker"><em>date:</em> Aug 17 2020</div>
-            <div class="tool-description">HBHL's annual Research Day is designed to showcase the research of trainees (graduate students and postdoctoral fellows) who are working in areas related to <a href="https://www.mcgill.ca/hbhl/files/hbhl/hbhl_strategic_research_plan.pdf">HBHL's goals and priorities.</a></div>
-            <a href="https://www.mcgill.ca/hbhl/events/research-day/research-day-2020" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
-          </div>
+        <div class="col-2 card-holder ">
+          <h2>An open platform for national and international EEG-based collaborative neuroscience research</h2>
+          <p>EEGNet will bring scientists and technical experts together in a centralized platform to combine EEG data and analytics for global health applications, by harmonizing data formats and computational tools used across the Canadian scientific community.</p>
+          <p>At the core of EEGNet is the development of an open, scalable neuroinformatics hub for the investigation of biomarkers of brain disorders.</p>
+          <p>EEGNet will leverage the existing technologies of the Canadian Open Neuroscience Platform (<a href="http://conp.ca">CONP</a>), built at the Montreal Neurological Institute-Hospital (<a href="http://theneuro.ca">The Neuro</a>), to share EEG data and tools from coast to coast.</p>
+          <p>Community-driven EEG tools, workflows and standards will allow earlier detection of abnormalities in developmental and psychiatric disorders, neurodegenerative diseases, and the study of states of consciousness.</p>
+          <p>EEGNet is a constituent organization of the Global Brain Consortium (<a href="https://globalbrainconsortium.org/">GBC</a>), an international neuroscience collaboration focused on EEG-mediated applications in global health.</p>
+          <p>EEGNet will enable Canadian researchers to contribute expertise to both national and international research applications in a scalable open collaboration hub.</p>
+          </p>
         </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="cards">
-            <img src="images/news/crc-pin.jpg" class="card-image-square">
-            <div class="tool-name">Canada Research Chairs Program announces new and renewed chairs for McGill Profs</div>
-            <div class="tool-maker"><em>date:</em> JULY 9 2020</div>
-            <div class="tool-description">Thirty-four Canada Research Chairs awarded to McGill researchers, in Tier 1 and Tier 2</div>
-            <a href="https://reporter.mcgill.ca/canada-research-chairs-program-announces-new-and-renewed-chairs-for-mcgill-profs/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="cards">
-            <img src="images/news/midl2020.jpg" class="card-image-square">
-            <div class="tool-name">Medical Imaging with Deep Learning: Montreal</div>
-            <div class="tool-maker"><em>date:</em> July 06-08 2020</div>
-            <div class="tool-description">The MIDL conference aims to be a forum for deep learning researchers, clinicians and health-care companies to apply deep learning based automatic image analysis in disease screening, diagnosis, prognosis, treatment selection and treatment monitoring.
-            </div>
-            <a href="https://2020.midl.io/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a><br>
-            <a href="https://www.youtube.com/watch?v=wNJQScMgpsI&feature=youtu.be" class="tool-link">See Video on Youtube <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="cards">
-            <img src="images/news/richards.png" class="card-image-square">
-            <div class="tool-name">Predictive cost functions in the neocortex</div>
-            <div class="tool-maker"><em>date:</em> July 06 2020</div>
-            <div class="tool-description">Neural computation is the product of two optimization procedures: natural selection and learning in the individual's lifetime. But, identifying what the neocortex has been optimized for, given its repeated circuit motifs and complex relationship to behaviour, is very challenging.
-            </div>
-            <a href="https://indico-jsc.fz-juelich.de/event/140/" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="cards">
-            <img src="images/news/hiball-plaque.png" class="card-image-square">
-            <div class="tool-name">HIBALL Inauguration Video</div>
-            <div class="tool-maker"><em>date:</em> July 01 2020</div>
-            <div class="tool-description">Watch the inauguration of the <a href="hiball.html" class="inline-link">HIBALL</a> project
-            </div>
-            <a href="https://youtu.be/OB2XICKZaRU" class="tool-link">See Video <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <!-- <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="cards">
-            <img src="images/news/ebrains-vid.png" class="card-image-square">
-            <div class="tool-name">New video at ebrains</div>
-            <div class="tool-maker"><em>date:</em> June 19 2020</div>
-            <div class="tool-description">Exploring multimodal neuroscience data using the EBRAINS Knowledge Graph & Multilevel Brain Atlases
-            </div>
-            <a href="https://www.youtube.com/watch?v=BnkAojiq4h8&feature=youtu.be" class="tool-link">See Video <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="cards">
-            <img src="images/news/ctv.png" class="card-image-square">
-            <div class="tool-name">Alan Evans speaks of the BigBrain on CTV</div>
-            <div class="tool-maker"><em>date:</em> June 17 2020</div>
-            <div class="tool-description">Alan Evans speaks about the potential neurological impact of Covid-19 as well as the benefits the BigBrain project brings to the future of neuroscience.
-            </div>
-            <a href="https://montreal.ctvnews.ca/video?clipId=1978400&jwsource=cl" class="tool-link">See Video <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="cards">
-            <img src="images/memorial-dr-zilles.jpg" class="card-image-square">
-            <div class="tool-name">Memorial for Dr Karl Zilles</div>
-            <div class="tool-maker"><em>date:</em> May 27 2020</div>
-            <div class="tool-description">With great sadness we say goodbye to Karl Zilles who passed away on 26 April 2020. We lose a brilliant scientist, friend, and key partner of the BigBrain Project.
-            </div>
-            <a href="https://www.fz-juelich.de/inm/inm-1/EN/UeberUns/Mitarbeiter/NachrufZilles/_node.html" class="tool-link">Read Obituary <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="cards">
-            <img src="images/alan-prize.png" class="card-image-square">
-            <div class="tool-name">Alan Evans awarded Killam Prize</div>
-            <div class="tool-maker"><em>date:</em> May 26 2020</div>
-            <div class="tool-description">"I am deeply honoured to receive this award. It is indeed very humbling and motivating to be considered for a prize that has been awarded to so many great Canadian scientists in the past."
-            </div>
-            <a href="https://killamprogram.canadacouncil.ca/prizes#winners" class="tool-link">Read More <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="cards">
-            <img src="images/logo-hiball.png" class="card-image-square">
-            <div class="tool-name">HIBALL</div>
-            <div class="tool-maker"><em>date:</em> Jan 20 2020</div>
-            <div class="tool-description">HIBALL, the new German-Canadian Lab, will build on the BigBrain Project’s AI-based 3D reconstruction of brain sections 
-            </div>
-            <div class="clear-all small-spacer"></div>
-            <div>
-              <img src="images/partner-helmholtz.png" class="col-2">
-              <img src="images/logo-hbhl.png" class="col-2">
-            </div>
-            <a href="hiball.html" class="tool-link">To HIBALL page <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>  
-        <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="cards">
-            <img src="images/logo-neuro.jpg" class="card-image-square">
-            <div class="tool-name">4th BigBrain Workshop: Launch of HIBALL</div>
-            <div class="tool-maker"><em>date:</em> June 26 2020</div>
-            <div class="tool-description">This pre-OHBM event is dedicated to the formal inauguration of <a href="hiball.html" class="inline-link">HIBALL</a>. The workshop will be comprised of invited talks covering recent work on the BigBrain data. A poster session will facilitate in-depth discussion and opportunity for young researchers to present their work.
-            </div>
-            <a href="https://www.mcgill.ca/neuro/channels/event/fourth-bigbrain-workshop-launch-helmholtz-international-bigbrain-analytics-learning-laboratory-320401" class="tool-link">Go to website <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div> -->
-<!--         <div class="slider-card-holder">
-          <div class="frontpage-card" data-mh="cards">
-            <h2>Recent Publications</h2>
-            <ul>
-              <li>one</li>
-              <li>two</li>
-              <li>three</li>
-            </ul>
-            <a href="references.html" class="tool-link">Go to references page <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div> -->
       </div>
-    </div>
-  </section>
+    </section>
+    <div class="clear-all"></div>
 
-    <!-- technical section -->
-  <section class="med-grey-bg">
-    <div class="section-content flex med-grey-bg">
-      <h1 class="full-width text-center">About the BigBrain</h1>
-      <!-- <h2 class="full-width text-center">technical information</h2> -->
-      <div class="icon">
-        <img src="images/icon-dataset.png">
-        <p>Full dataset over 1TB</p>
+    <footer>  
+      <div class="section-content flex flex-align-center">
+        <div class="logos">
+          <a href="https://braincanada.ca"><img src="images/logo-braincanada.png" alt="BrainCanada logo"></a>
+          <a href="http://ludmercentre.ca"><img src="images/logo-ludmer.png" alt="Ludmercentre logo"></a>
+          <a href="https://mcgill.ca"><img src="images/logo-mcgill.png" alt="McGill logo"></a>
+          <a href="https://www.mcgill.ca/neuro/"><img src="images/logo-neuro.jpg" alt="the Montreal Neurological Institute-Hospital logo"></a>
+          <a href="https://conp.ca"><img src="images/logo-conp-long.png" alt="the Canadian Open Neuroscience Platform logo"></a>
+          <a href="https://www.ulaval.ca/"><img src="images/logo-laval.png" alt="the University of Laval logo"></a>
+          <a href="https://brocku.ca/"><img src="images/logo-brock.png" alt="the University of Brock logo"></a>
+        </div>
+        <!-- div class="col-2 font-white text-center">
+          <h3>Contact Us</h3>
+          General Inquiries: <a href="mailto:info.loris@mcin.ca" class="font-white">info.loris@mcin.ca</a>
+        </div>
+        <div class="col-2 font-white text-center">
+          <a href="https://github.com/neurohub" class="font-white">
+            <img src="images/logo-github.png" class="github-icon center">
+            <h3>Find us on GitHub</h3>            
+          </a>
+        </div -->
       </div>
-      <div class="icon">
-        <img src="images/icon-resolution.png">
-        <p>Scans at 20μm resolution</p>
-      </div>
-      <div class="icon">
-        <img src="images/icon-formats.png">
-        <p>Multiple formats</p>
-      </div>
-      <div class="icon">
-        <img src="images/icon-brain.png">
-        <p>An expanding brain atlas</p>
-      </div>
-      <div class="icon">
-        <img src="images/icon-discourse.png">
-        <p>A thriving community</p>
-      </div>
-      <div class="full-width clear-all">
-        <!-- <div class="button-holder">
-          <a href="https://bigbrain.humanbrainproject.org/"><button class="float-left">see it on NeHuBa</button></a>
-          <a href="https://bigbrain.loris.ca/"><button class="float-right">access data on LORIS</button></a>
-          <div class="clear-all"></div>
-        </div> -->
-      </div>
-    </div>
-  </section>
-  <div class="clear-all"></div>
-
-  <!-- value section -->
-  <section>
-    <div class="section-content max100 lt-grey-bg end">
-      <h1 class="full-width text-center small-spacer">What People Say About the BigBrain</h1>
-      <div id="slick-slider" class="slider">
-          <div class="testimonial">
-            <div class="col-2 flex-center">
-              <img src="images/dr-zilles.jpg" class="BigBrainPic">
-            </div>
-            <div class="col-2">
-              <div class="text-box">
-                <h1>Why create the BigBrain</h1>
-                <h2>A message from Dr. Zilles</h2>
-                <p>the major advantage of the BigBrain for our work is that the image data of the human brain are registered as a 3D volume at very high spatial resolution. Since the human brain is folded, any part of the cortical ribbon may be subjected to the geometrical effects of this folding, i.e. the cortex is obliquely or even tangentially sectioned at various sites in a 2D representation, e.g. in images of single microtome sections. This effect hampers the measurement of any cortical structure which is bound to the 3D columnar architecture of the cortex. In contrast, the BigBrain allows analyses in 3D, and thus has opened the door to many studies which would not be possible in 2D representations.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial">
-            <div class="col-2 flex-center">
-              <img src="images/testimonial-martha-crago.jpg" class="BigBrainPic">
-            </div>
-            <div class="col-2">
-              <div class="text-box">
-                <h1>Martha Crago</h1>
-                <h2>Vice-Principal (Research + Innovation) McGill University</h2>
-                <p>With HIBALL the partnership between two world-leading research institutions in computational neuroscience will provide an important platform for the scientists to conduct innovative, interdisciplinary, and complementary research in a rich and collaborative setting.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial">
-            <div class="col-2 flex-center">
-              <img src="images/testimonials-yoshua-bengio.jpg" class="BigBrainPic">
-            </div>
-            <div class="col-2">
-              <div class="text-box">
-                <h1>Yoshua Bengio</h1>
-                <h2>Mila Scientific Director, Quebec Artificial Intelligence Institute</h2>
-                <p>HIBALL assembles a team with world-leading expertise in neuroimaging, artificial intelligence, neuroscience and neuroinformatics, which complements well the team at Mila. The active participation of several PIs with ties to Mila is very exciting, and we anticipate this lab will further expand the collaboration between neuroscience and AI experts in the Montreal ecosystem, leading to cutting-edge discoveries in both fields.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial">
-            <div class="col-2 flex-center">
-              <img src="images/testimonials-viktor-jirsa.jpg" class="BigBrainPic">
-            </div>
-            <div class="col-2">
-              <div class="text-box">
-                <h1>Viktor Jirsa</h1>
-                <h2>Directeur de Recherche, CNRS</h2>
-                <p>HIBALL can build on a remarkable expertise and international reputation and will lead to high impact contributions in Human Brain Atlasing, Neuroinformatics, and Machine Learning.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  </section>
-  <!-- footer -->
-  <footer>  
-    <blockquote class="quote-holder">
-      <img class="quote-image" src="images/icon-aquisition.png">
-      <p class="quote-text">A community in the making.</p>
-    </blockquote>
-    <div class="section-content flex">
-      <a href="https://www.fz-juelich.de/">
-        <img src="images/logo-julich.jpg">
-      </a>
-      <a href="https://mcgill.ca/">
-        <img src="images/logo-mcgill.png">
-      </a>
-    </div>
-    <p class="center" style="color: #fff;">For information please email us at <a href="mailto:info@bigbrainproject.org">info@bigbrainproject.org</a>
-  </footer>
-  <div class="brand-border-1"></div>
-  <div class="brand-border-2"></div>
-  <div class="brand-border-3"></div>
+    </footer>
+  </div>
 </div>
-
 <script>
   $(function(){
     $("#showmenu").click(function(e){
@@ -385,79 +108,8 @@
     });
   });
 </script>
-
-<script type="text/javascript">
-  $(function() {
-    $('.item').matchHeight();
-  });
-</script>
-
-<script type="text/javascript">
-   $(document).on('ready', function() {
-    $('#slick-slider').slick({
-      dots: true,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 6000,
-      draggable: true,
-      mobilefirst: true,
-      pauseonhover: true,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1500,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-  });
-});
-</script>
-
-<script type="text/javascript">
-   $(document).on('ready', function() {
-    $('#slick-slider-2').slick({
-      dots: true,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 8000,
-      draggable: true,
-      mobilefirst: true,
-      pauseonhover: true,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      responsive: [
-        {
-          breakpoint: 1220,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 800,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-  });
-});
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({duration: 1000, offset: 120,});
 </script>
 </body></html>
