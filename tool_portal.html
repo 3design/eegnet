@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!-- general -->
+<meta charset="utf-8">
+<title>EEGNet</title>
+<meta name="viewport" content="width=device-width">
+
+<meta name="author" content="Derek Lo @ 3design-dlo.com">
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/drop-down.js"></script>
+</head>
+<body>
+<div id="main-wrapper">
+  <!-- navigation -->
+
+  <nav class="site-nav">
+    <div class="nav-container">
+      <a href="index.html"><img src="images/logo-eeg2.png" class="logo bottom" alt="EEGNet logo"></a>
+      <div id="showmenu">Menu</div>
+      <ul id="menu" class="nav-list hide">
+       <li class="nav-item"><a href="#!">About</a>
+        <ul class="nav-dropdown">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+       </li>
+       <li class="nav-item"><a href="#!" class="active">Resources</a>
+        <ul class="nav-dropdown">
+          <li><a href="dataset_portal.html">Dataset Portal</a></li>
+          <li><a href="tool_portal.html" class="active">Tool Portal</a></li>
+        </ul>
+       </li>
+       <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+      </ul>
+    </div>
+  </nav>
+    <!-- intro section -->
+    <section class="extreme-top">
+      <div class="section-content card-holder">
+        <h1 class="full-width text-center">Community Tool Portal</h1>
+        <p>Information about the tools shared across EEGNet community can be found in the table below. Tools that are open source and available to download online are indicated and the access links are provided.</p>
+        <ul>
+          <li>Do you have an open-source tool you would like to share with us? <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScUmJfgbtwaEcYKk5IjQj1hV1K9jggLlrOgZfXWQX_qOW935w/viewform"><b>Let us know about your Tools</b></a> </li>
+        </ul>
+
+    <div class="clear-all"></div>
+
+    <!-- Data Section -->
+
+        <div class="tableholder">
+          <table id="datasetTable" class="">
+            <tr class="tablehead2">
+              <th>Tool</th>
+              <th>Contact</th>
+              <th>Institution</th>
+              <th>Access Status</th>
+              <th>Licensing</th>
+              <th>File Format</th>
+              <th>Publication</th>
+              <th>Download</th>
+            </tr>
+            <tr>
+              <td>HarMNqEEG</td>
+              <td>Jorge Bosch-Bayard</td>
+              <td>CNEURO, UESTC, McGill University</td>
+              <td><img src="images/logo-eeg2.png" class="tablelogo">
+                  <a target="_blank" href="https://portal.cbrain.mcgill.ca/available"><img src="images/logo-cbrain.png" class="tablelogo"/></a>
+              </td>
+              <td>GPL 3</td>
+              <td>.mat</td>
+              <td><a target="_blank" href="https://doi.org/10.1016/j.neuroimage.2022.119190">doi.org/10.1016/j.neuroimage.2022.119190</a></td>
+              <td><a target="_blank" href="https://github.com/LMNonlinear/HarMNqEEG">github.com/LMNonlinear/HarMNqEEG</a></td>
+            </tr>
+            <tr>
+              <td>Brainstorm Tool</td>
+              <td>Corentin Labelle</td></td>
+              <td>Laval-CERVO, McGill University</td>
+              <td><img src="images/logo-eeg2.png" class="tablelogo"/>
+                <a target="_blank" href="https://portal.cbrain.mcgill.ca/available"><img src="images/logo-cbrain.png" class="tablelogo"/></a>
+                Open on <a target="_blank" href="https://github.com/CorentinLabelle/Brainstorm-Tool">GitHub</a>
+              </td>
+              <td>MIT</td>
+              <td>.edf .mat<img src="images/logo-bids.png" class="tablelogo2"><br></td>
+              <td><a target ="_blank" href="https://doi.org/10.1155/2011/879716">doi.org/10.1155/2011/879716</a></td>
+              <td><img src="images/logo-eeg2.png" class="tablelogo"/><a target="_blank" href="https://github.com/CorentinLabelle/Brainstorm-Tool">github.com/CorentinLabelle/Brainstorm-Tool</a></td>
+            </tr>
+            <tr>
+              <td>PyLossless</td>
+              <td>Scott Huberty, Tyler Collins</td>
+              <td>McGill University, Brock University</td>
+              <td><img src="images/logo-eeg2.png" class="tablelogo"/>
+                <a target="_blank" href="https://portal.cbrain.mcgill.ca/available"><img src="images/logo-cbrain.png" class="tablelogo"/></a>
+                Open on <a target="_blank" href="https://github.com/lina-usc/pylossless">GitHub</a></td>
+              <td>MIT</td>
+              <td>.edf .set<img src="images/logo-bids.png" class="tablelogo2"><br></td>
+              <td>In preparation<br><a target="_blank" href="https://pylossless.readthedocs.io/en/latest/index.html">Read the Docs</a></td>
+              <td><a target="_blank" href="https://github.com/lina-usc/pylossless">github.com/lina-usc/pylossless</a></td>
+            </tr>
+             <tr>
+              <td>qEEGt Toolbox</td>
+              <td>Jorge Bosch-Bayard</td>
+              <td>CNEURO, UESTC, McGill University</td>
+              <td>
+                <img src="images/logo-eeg2.png" class="tablelogo"/>
+                <a target="_blank" href="https://portal.cbrain.mcgill.ca/available"><img src="images/logo-cbrain.png" class="tablelogo"/></a></td>
+              <td>GPL 3</td>
+              <td>.mat .plg</td>
+              <td><a target="_blank" href="https://doi.org/10.3389/fninf.2020.00033">doi.org/10.3389/fninf.2020.00033</a></td>
+              <td><a target="_blank" href="https://github.com/CCC-members/QEEGT-Toolbox">github.com/CCC-members/QEEGT-Toolbox</a></td>
+            </tr>
+            <tr>
+              <td>FieldTrip</td>
+              <td>Robert Oostenveld</td>
+              <td>Donders Institute, Radboud University</td>
+              <td><a target="_blank" href="https://www.fieldtriptoolbox.org">FieldTripToolbox.org</a> </td>
+              <td>GPL 3</td>
+              <td>.edf .mat .set</td>
+              <td><a target="_blank" href= "https://doi.org/10.1155/2011/156869">doi.org/10.1155/2011/156869</a></td>
+              <td><a target="_blank" href="https://www.fieldtriptoolbox.org">fieldtriptoolbox.org</a></td>
+            </tr>
+            <tr>
+              <td>LIONirs Toolbox</td>
+              <td>Anne Gallagher </td>
+              <td>Université de Montréal </td>
+              <td>Contact PI</td>
+              <td>GPL 3</td>
+              <td>.mat</td>
+              <td><a target="_blank" href="https://doi.org/10.1016/j.jneumeth.2022.109487">doi.org/10.1016/j.jneumeth.2022.109487</a> </td>
+              <td><a target="_blank" href="https://github.com/JulieTremblay3/LIONirs">github.com/JulieTremblay3/LIONirs</a></td>
+            </tr>
+            <tr>
+              <td>Matlab suite</td>
+              <td>Javier Escudero</td>
+              <td>University of Edinburgh </td>
+              <td>See publication</td>
+              <td></td>
+              <td>.mat</td>
+              <td><a target="_blank" href="https://doi.org/10.1109/TBME.2017.2679136">doi.org/10.1109/TBME.2017.2679136</a></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Brain Streaming Layer</td>
+              <td>Mathieu Scheltienne </td>
+              <td>EPFL, Fondation Campus Biotech Geneva </td>
+              <td>Open on GitHub</td>
+              <td>GPL 3 </td>
+              <td>.fif</td>
+              <td>In preparation</td>
+              <td><a target="_blank" href="https://github.com/bsl-tools/bsl">github.com/bsl-tools/bsl</a></td>
+            </tr>
+            <tr>
+              <td>Brain Entropy in Space and Time  / Source localization plugin in Brainstorm and CBrain</td>
+              <td>Christophe Grova  </td>
+              <td>Concordia University/PERFORM</td>
+              <td>Open on GitHub</td>
+              <td>GPL 3</td>
+              <td>.edf .mat</td>
+              <td><a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/29164737/">doi.org/10.1002/hbm.23889</a></td>
+              <td><a target="_blank" href="https://github.com/multifunkim">github.com/multifunkim</a></td>
+            </tr>
+            <tr>
+              <td>MADE Pipeline </td>
+              <td>Nathan Fox</td>
+              <td>University of Maryland  </td>
+              <td>
+                 <a target="_blank" href="https://portal.cbrain.mcgill.ca/available"><img src="images/logo-cbrain.png" class="tablelogo"/></a>
+                 Open on GitHub
+              </td>
+              <td>GNU GPL</td>
+              <td>.set<img src="images/logo-bids.png" class="tablelogo2"><br></td>
+              <td><a target="_blank" href="https://onlinelibrary.wiley.com/doi/10.1111/psyp.13580">doi.org/10.1111/psyp.13580</a> </td>
+              <td><a target="_blank" href="https://github.com/ChildDevLab/MADE-EEG-preprocessing-pipeline">github.com/ChildDevLab/MADE-EEG-preprocessing-pipeline</a></td>
+            </tr>
+            <tr>
+              <td>Unfold.jl</td>
+              <td>Benedikt Ehinger</td>
+              <td>University of Stuttgart</td>
+              <td>Open on GitHub</td>
+              <td>MIT</td>
+              <td>.edf .mat .set<img src="images/logo-bids.png" class="tablelogo2"><br></td>
+              <td><a target="_blank" href="https://peerj.com/articles/7838/">doi.org/10.7717/peerj.7838</a></td>
+              <td><a target="_blank" href="https://github.com/unfoldtoolbox/unfold.jl/">github.com/unfoldtoolbox/unfold.jl/</a></td>
+            </tr>
+            <tr>
+              <td>QuantitativeSourceImaging</td>
+              <td>Tamesh Halder </td>
+              <td>IIT Kharagpur</td>
+              <td>Not available online</td>
+              <td>GPL 3</td>
+              <td>.mat</td>
+              <td>N/A</td>
+              <td><a target="_blank" href="https://github.com/arpan-toolboxes/QuantitativeSourceImaging">github.com/arpan-toolboxes/QuantitativeSourceImaging</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+      
+   <!-- footer -->
+
+    <footer>  
+      <div class="section-content flex flex-align-center">
+        <div class="logos">
+          <a target="_blank" href="https://braincanada.ca"><img src="images/logo-braincanada.png" alt="BrainCanada logo"></a>
+          <a target="_blank" href="http://ludmercentre.ca"><img src="images/logo-ludmer.png" alt="Ludmercentre logo"></a>
+          <a target="_blank" href="https://mcgill.ca"><img src="images/logo-mcgill.png" alt="McGill logo"></a>
+          <a target="_blank" href="https://www.mcgill.ca/neuro/"><img src="images/logo-neuro.jpg" alt="the Montreal Neurological Institute-Hospital logo"></a>
+          <a target="_blank" href="https://conp.ca"><img src="images/logo-conp-long.png" alt="the Canadian Open Neuroscience Platform logo"></a>
+          <a target="_blank" href="https://www.ulaval.ca/"><img src="images/logo-laval.png" alt="the University of Laval logo"></a>
+          <a target="_blank" href="https://brocku.ca/"><img src="images/logo-brock.png" alt="the Brock University logo"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+<script>
+  $(function(){
+    $("#showmenu").click(function(e){
+    $("#menu").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
+</script>
+<script>
+$('.map')
+  .click(function(){
+      $(this).find('iframe').addClass('clicked')})
+  .mouseleave(function(){
+      $(this).find('iframe').removeClass('clicked')});
+</script>
+<script type="text/javascript">
+  // The function actually applying the offset
+function offsetAnchor() {
+  if (location.hash.length !== 0) {
+    window.scrollTo(window.scrollX, window.scrollY - 100);
+  }
+}
+
+// Captures click events of all <a> elements with href starting with #
+$(document).on('click', 'a[href^="#"]', function(event) {
+  // Click events are captured before hashchanges. Timeout
+  // causes offsetAnchor to be called after the page jump.
+  window.setTimeout(function() {
+    offsetAnchor();
+  }, 0);
+});
+
+// Set the offset when entering page with hash present in the url
+window.setTimeout(offsetAnchor, 0);
+</script>
+
+<!-- for sticky second nav -->
+<!-- <script>
+$("document").ready(function($){
+    var $stick = $('#second-nav');
+    var $pad = $('#stickypad');
+    var $win = $(window);
+    var winH = $win.height() + 0;   // Get the window height.
+
+    $win.on("scroll", function () {
+        if ($(this).scrollTop() > winH ) {
+            $stick.addClass("stick");
+            $pad.addClass("stick-pad");
+        } else {
+            $stick.removeClass("stick");
+            $pad.removeClass("stick-pad");
+        }
+    }).on("resize", function(){ // If the user resizes the window
+       winH = $(this).height(); // you'll need the new height value
+    });
+});
+</script> -->
+</body></html>

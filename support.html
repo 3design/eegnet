@@ -34,11 +34,11 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
       <a href="index.html"><img src="images/logo-eeg2.png" class="logo bottom" alt="EEGNet logo"></a>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
-       <li class="nav-item"><a href="#!">About</a>
+       <li class="nav-item"><a href="#!" class="active">About</a>
         <ul class="nav-dropdown">
           <li><a href="about.html">About Us</a></li>
           <li><a href="publications.html">Publications</a></li>
-          <li><a href="support.html">Support</a></li>
+          <li><a href="support.html" class="active">Support</a></li>
         </ul>
        </li>
        <li class="nav-item"><a href="#!">Resources</a>
@@ -47,49 +47,24 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
           <li><a href="tool_portal.html">Tool Portal</a></li>
         </ul>
        </li>
-       <li class="nav-item"><a href="contact.html" class="active">Contact Us</a></li>
+       <li class="nav-item"><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
       </ul>
     </div>
   </nav>
+    <!-- technical section -->
+    <section class="extreme-top">
+      <div class="section-content flex card-holder flex-center">
+        <h1 class="full-width text-center">EEGNet Support</h1>
+        <p>EEGNet receives funding from a <a href="https://braincanada.ca/">Brain Canada</a> Platform Support Grant Competition Award in addition to funds and in-kind support from partner institutions Brock University and Université Laval, as well as from sponsors such as the <a href="http://ludmercentre.ca/">Irving Ludmer Family Foundation</a> and Vera Gross.</p>
+      </div>       
+    </section>
+    <div class="clear-all"></div>
 
-  <!-- contact section -->
-  <section class="extreme-top extra-pad">
-    <div class="section-content font-big end">
-      <!-- <h1 class="full-width text-center">Contact Us</h1> -->
-      <!-- <h2 class="full-width text-center"></h2> -->
-
-      <div id="officehours" class="headline"> 
-        <h2>EEGNet Open Office Hours</h2>
-        <p> <a href="https://mcgill.zoom.us/meeting/register/tZ0kfuyurjgoH9a8bqn0PO5vpeaiWZpaXk7R"> <b>Request a Zoom session</b></a> or connect with us at <a href="mailto:contact@eegnet.org">Contact@EEGNet.org</a>.</p>
-      <br>
-          <ul>
-            <li>Get started with the <a target="_blank" href="https://EEGNet.Loris.ca/"><b>EEGNet Platform</b></a></li>   
-            <li>Get support sharing your Data and Tools</li>
-            <li>Meet the Team and provide feedback</li>
-          </ul>
-        </p>
-     </div>
       
-      <div id="surveys" class="headline"> 
-        <h2>Share your input</h2>
-        <p>Please let us know more about your research context and views:  </p>
-        <ul>
-          <li><a href="http://tinyurl.com/2w6fjanu">User Requirements and Needs</a></li>
-          <li><a href="http://tinyurl.com/2czpyrn6">Technical Landscape</a></li>
-          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdDWTx5iCGlQJxyLYbuy91oVd6cqPZ-3PtyuLqJ2HU9XhxeRA/viewform">Datasets</a></li>
-          <li><a href="https://docs.google.com/forms/u/2/d/e/1FAIpQLScUmJfgbtwaEcYKk5IjQj1hV1K9jggLlrOgZfXWQX_qOW935w/viewform">Tools</a></li>
-        </ul>
-      </div>
+   <!-- footer -->
 
-
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeEDaqziD3yXOtVr3WSCRUa_D6WtfDfs6J--JtrB0HQFlP_sw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" class="contact-form">Loading…</iframe>
-    </div>
-  </section>
-  <div class="clear-all"></div>
-
-  <!-- footer -->
     <footer>  
       <div class="section-content flex flex-align-center">
         <div class="logos">
@@ -99,41 +74,12 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
           <a href="https://www.mcgill.ca/neuro/"><img src="images/logo-neuro.jpg" alt="the Montreal Neurological Institute-Hospital logo"></a>
           <a href="https://conp.ca"><img src="images/logo-conp-long.png" alt="the Canadian Open Neuroscience Platform logo"></a>
           <a href="https://www.ulaval.ca/"><img src="images/logo-laval.png" alt="the University of Laval logo"></a>
-          <a href="https://brocku.ca/"><img src="images/logo-brock.png" alt="the University of Brock logo"></a>
+          <a href="https://brocku.ca/"><img src="images/logo-brock.png" alt="the Brock University logo"></a>
         </div>
-        <!-- div class="col-2 font-white text-center">
-          <h3>Contact Us</h3>
-          General Inquiries: <a href="mailto:info.loris@mcin.ca" class="font-white">info.loris@mcin.ca</a>
-        </div>
-        <div class="col-2 font-white text-center">
-          <a href="https://github.com/neurohub" class="font-white">
-            <img src="images/logo-github.png" class="github-icon center">
-            <h3>Find us on GitHub</h3>            
-          </a>
-        </div -->
       </div>
     </footer>
+  </div>
 </div>
-
-<!-- <script>
-    $(document).ready(function() {
-        $('#showmenu').click(function() {
-                $('.nav-list').toggleClass("hide");
-        });
-    });
-</script> -->
-
-<script>
-  $(function(){
-    $(".accordian h3").click(function(e){
-    $(".accordian ul p.answer").slideUp();
-      if ($(this).next().is(":hidden")){
-      $(this).next().slideDown();
-      }
-    });
-  });
-</script>
-
 <script>
   $(function(){
     $("#showmenu").click(function(e){
@@ -144,4 +90,53 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
     });
   });
 </script>
+<script>
+$('.map')
+  .click(function(){
+      $(this).find('iframe').addClass('clicked')})
+  .mouseleave(function(){
+      $(this).find('iframe').removeClass('clicked')});
+</script>
+<script type="text/javascript">
+  // The function actually applying the offset
+function offsetAnchor() {
+  if (location.hash.length !== 0) {
+    window.scrollTo(window.scrollX, window.scrollY - 100);
+  }
+}
+
+// Captures click events of all <a> elements with href starting with #
+$(document).on('click', 'a[href^="#"]', function(event) {
+  // Click events are captured before hashchanges. Timeout
+  // causes offsetAnchor to be called after the page jump.
+  window.setTimeout(function() {
+    offsetAnchor();
+  }, 0);
+});
+
+// Set the offset when entering page with hash present in the url
+window.setTimeout(offsetAnchor, 0);
+</script>
+
+<!-- for sticky second nav -->
+<!-- <script>
+$("document").ready(function($){
+    var $stick = $('#second-nav');
+    var $pad = $('#stickypad');
+    var $win = $(window);
+    var winH = $win.height() + 0;   // Get the window height.
+
+    $win.on("scroll", function () {
+        if ($(this).scrollTop() > winH ) {
+            $stick.addClass("stick");
+            $pad.addClass("stick-pad");
+        } else {
+            $stick.removeClass("stick");
+            $pad.removeClass("stick-pad");
+        }
+    }).on("resize", function(){ // If the user resizes the window
+       winH = $(this).height(); // you'll need the new height value
+    });
+});
+</script> -->
 </body></html>

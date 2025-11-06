@@ -6,8 +6,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="manifest" href="site.webmanifest">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 <!-- general -->
 <meta charset="utf-8">
@@ -34,7 +34,19 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
       <a href="index.html"><img src="images/logo-eeg2.png" class="logo bottom" alt="EEGNet logo"></a>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
-       <li class="nav-item"><a href="about.html" class="active">About</a></li>
+       <li class="nav-item"><a href="#!" class="active">About Us</a>
+        <ul class="nav-dropdown">
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+       </li>
+       <li class="nav-item"><a href="#!">Resources</a>
+        <ul class="nav-dropdown">
+          <li><a href="dataset_portal.html">Dataset Portal</a></li>
+          <li><a href="tool_portal.html">Tool Portal</a></li>
+        </ul>
+       </li>
        <li class="nav-item"><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
@@ -72,12 +84,12 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
     <section class="extreme-top">
       <!--div class="section-content flex card-holder flex-center"-->
       <!--div class="col-2" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-offset="100" data-aos-delƒimgay="250"-->
-      <div class="section-content flex card-holder flex-center data-aos-offset="100" data-aos-delƒimgay="250">
+      <div class="section-content flex card-holder flex-center">
         <h1 class="full-width text-center">About EEGNet</h1>
         <p>A national network of neuroscience researchers bring together expertise across <a href="#map-anchor">10 sites and 5 provinces</a>.</p>
         <p>Many EEGNet researchers also form part of the Canadian Open Neuroscience Platform (<a href="http://CONP.ca">CONP</a>) as well as the Global Brain Consortium (<a href="https://globalbrainconsortium.org/">GBC</a>).</p>
         <ul class="full-width team-list">
-        <h1 class="full-width text-center">Lead Investigator</h1>
+        <h2 class="full-width text-center">Lead Investigator</h2>
           <li>
             <div class="col-4">
               <img src="images/team/team-alan-evans.jpg" class="team-image" alt="this is an image of Alan Evans"><br>
@@ -94,7 +106,7 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
           </li>
         </ul>
         <ul class="full-width team-list">
-        <h1 class="full-width text-center">Co-Investigators</h1>
+        <h2 class="full-width text-center">Co-Investigators</h2>
           <li>
             <div class="col-4">
               <img src="images/team/team-sid-segalowitz.jpg" class="team-image" alt="this is an image of Sid Segalowitz"><br>
@@ -228,10 +240,24 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
               <p class="team-name">Jorge Bosch-Bayard, McGill University</p>
             </div>
             <div class="col-75">
-              <p class="team-description">Jorge F. Bosch-Bayard worked as a computer scientist at the Cuban Neuroscience Center from 1984-2014, and a Senior Researcher of the Cuban Academy of Sciences from 2009. From 2014 to 2018, he was an Associate Researcher at the Institute for Neurobiology, UNAM, Mexico. Since 2019, he has been a Research Assistant at the MNI in Canada. He works on methods for the processing, analysis and statistical of multimodal neuroimages (EEG/MEG, MRI, fMRI, DWI). </p>
+              <p class="team-description">Maria Zambrano Researcher, Universidad Autonoma de Madrid. Senior Researcher at the Cuban neuroscience Center and Montreal Neurological Institute. Professor at the Center for Neurobiology of UNAM, Mexico in methods development for Quantitative EEG analysis for source localization and connectivity and global normative data.  </p>
               <details class="default">
                 <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
                 <p>He specializes in (i) quantitative EEG analysis for the estimation of the current density at the EEG generators in the brain ( ii) statistical methods focused on high dimensional data sets (iii) methods for the estimation of brain connectivity, based on the analysis of correlation matrices as well as on the flow of information among different brains sites, derived from multivariate auto-regressive time series models (iv) algorithms for solving the leakage problem at the EEG sources. (v) robust algorithms for solving the classification problem in high dimensional spaces with small samples. He is an organizer of the Cuban Human Brain Mapping project, responsible for data collection, curation, analysis and statistical assessment of the results.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-pedro-valdes-sosa.jpg" class="team-image" alt="this is an image of Pedro Valdes-Sosa"><br>
+              <p class="team-name">Pedro Valdes-Sosa, McGill University, CNEURO (Cuba), UESTC (China)</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Co-Director of Global Brain Consortium, Vice-director of the Cuban Neuroscience Center, Director of the Joint China-Cuba Lab for Frontiers Research in Translational Neurotechnology UESTC, Chengdu, China; Emeritus member of the Cuban Academy of Sciences; Adjunct Professor of Psychiatry at McGill University.</p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>He is a member of the Scientific Advisory Board OHBM and HBHL. Cuban delegate to the International Brain Initiative. Co-Chief editor of the Journal Frontiers in Neuroimaging. Expert in Neuroimaging especially EEG with an interest in international cooperation toward Global Precision Brain Health.</p>
               </details>
             </div>
             <div class="clear-all"></div>
@@ -281,13 +307,27 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
           <li>
             <div class="col-4">
               <img src="images/team/team-stefon-von-noordt.png" class="team-image" alt="this is an image of Stefon von Noordt"><br>
-              <p class="team-name">Stefon van Noordt, McGill University</p>
+              <p class="team-name">Stefon van Noordt, Mount Saint Vincent University</p>
             </div>
             <div class="col-75">
-              <p class="team-description">Dr. Stefon van Noordt is a Research Associate and Scientific Team Lead of the Azrieli Centre for Autism Research at the Montreal Neurological Institute, McGill University. He received his undergraduate and graduate training at Brock University, and completed postdoctoral fellowships at the Yale University Child Study Centre and Montreal Neurological Institute. </p>
+              <p class="team-description">Dr. Stefon van Noordt is an Assistant Professor of Human Neuroscience at Mount Saint Vincent University. He completed his graduate training at Brock University, followed by postdoctoral fellowships at the Yale University Child Study Centre and Montreal Neurological Institute.</p>
               <details class="default">
                 <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
-                <p>His research primarily uses EEG and eye-tracking technologies to examine the developmental neural underpinnings of sensory and cognitive processing, in particular how they relate to risk and outcome in autism and similar neurodevelopmental disorders. In addition, his work focuses on ‘big data’ – large data sets that can be analyzed to reveal complex multivariate patterns – to identify reliable EEG biomarkers that relate to to risk factors, early diagnosis, and treatment outcomes. He has contributed to the development of novel paradigms, standardized methods for batch pre-processing of EEG data, integrated platforms for harmonizing multi-site EEG data, and robust statistics for single trial and single subject analyses. His work has been funded by CIHR, NSERC, TACC/FRQS, and most recently through a NARSAD Young Investigator Grant from the Brain and Behaviour Foundation.</p>
+                <p>His research primarily uses EEG and eye-tracking technologies to examine brain-based markers of attention control and performance monitoring as they relate to normative and atypical development. In addition, his work focuses on ‘big data’ to identify reliable EEG markers that relate to developmental risk factors and vary across individuals. He has contributed to the development of novel experimental paradigms, standardized methods for batch pre-processing of EEG data, integrated platforms for harmonizing multi-site EEG data, and robust statistics for single trial and single subject analyses. His work has been funded by CIHR, NSERC, TACC/FRQS, and most recently through a NARSAD Young Investigator Grant from the Brain and Behaviour Foundation.</p>
+              </details>
+            </div>
+            <div class="clear-all"></div>
+          </li>
+          <li>
+            <div class="col-4">
+              <img src="images/team/team-christian-oreilly.jpg" class="team-image" alt="this is an image of Christian O'Reilly"><br>
+              <p class="team-name">Christian O'Reilly, University of South Carolina</p>
+            </div>
+            <div class="col-75">
+              <p class="team-description">Christian O’Reilly is an Assistant Professor at the University of South Carolina. He received his B.Ing, M.Sc.A. and from Polytechnique Montreal. He was a postdoc fellow at the CARSM and then an NSERC postdoc fellow at McGill's Brain Imaging Center where he worked on EEG sleep transients. He also worked at the EPFL on modeling of the thalamocortical loop and at McGill on brain connectivity.</p>
+              <details class="default">
+                <summary>Click to <span class="open">read more</span><span class="close">close</span></summary>
+                <p>His research interests are related to better understanding the brain across spatial and temporal scales in order to address complex neurodevelopmental issues such as autism and other neurodevelopmental disorders. The methods he uses include analytical techniques (e.g., EEG source reconstruction, functional connectivity) and modeling (e.g., point neurons, morphologically-detailed neurons, neural masses), as well as the combination of these two approaches through Bayesian model-driven analyses. He is further interested in novel ways to empower the study of neuroscience through AI and to empower AI through biologically inspired neural networks.</p>
               </details>
             </div>
             <div class="clear-all"></div>
@@ -393,7 +433,7 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
           <li>
             <div class="col-4">
               <img src="images/team/team-christine-lackner.jpg" class="team-image" alt="this is an image of Christine Lackner"><br>
-              <p class="team-name">Christine Lackner, Mount St Vincent University</p>
+              <p class="team-name">Christine Lackner, Mount Saint Vincent University</p>
             </div>
             <div class="col-75">
               <p class="team-description">Christine Lackner did her PhD at Brock University under the direction of Dr. Sidney Segalowitz, an internationally recognized electrophysiologist receiving regular research support from the tri-council. Lackner has received tri-council funding to support both her doctoral studies (NSERC PGS-D, 2009-2012) and her ongoing program of research (SSHRC Explore). She is actively involved in large research projects funded by national (e.g., CIHR) and provincial (e.g., Ontario Brain Institute) funding bodies. </p>
@@ -454,11 +494,12 @@ meta name="description" content="NeuroHub - An Open Science Infrastructure for R
           <iframe src="https://www.google.com/maps/d/u/0/embed?mid=12QiKSZj9WJ-6HRktA2_iJqBBc7gszm2A" width="640" height="480"></iframe>
         </div>
         <div class="section-content" id="publications-anchor">
-        <h1 class="text-center">Related Publications</h1>
+        <h2 class="text-center">Related Publications</h2>
         <ul>
+          <li>Bosch-Bayard, J. et al., 2022. Harmonized-Multinational qEEG norms (HarMNqEEG). NeuroImage. <a href="https://doi.org/10.1016/j.neuroimage.2022.119190">doi.org/10.1016/j.neuroimage.2022.119190</a></li>
           <li>Bosch-Bayard, J. et al., 2020. A Quantitative EEG Toolbox for the MNI Neuroinformatics Ecosystem: Normative SPM of EEG Source Spectra. Front. Neuroinform. <a href="https://doi.org/10.3389/fninf.2020.00033">doi:10.3389/fninf.2020.00033</a></li>
+          <li>Desjardins, J., et al. 2020. "EEG Integrated Platform Lossless (EEG-IP-L) pre-processing pipeline for objective signal quality assessment incorporating data annotation and blind source separation. J Neurosci Methods. <a href="https://doi.org/10.1016/j.jneumeth.2020.108961">https://doi.org/10.1016/j.jneumeth.2020.108961</a></li>
           <li>Frauscher, B. et al., 2018. Atlas of the normal intracranial electroencephalogram: Neurophysiological awake activity in different cortical areas. Brain. <a href="https://doi.org/10.1093/brain/awy035">https://doi.org/10.1093/brain/awy035</a></li>
-          <li>van Noordt, S., et al. 2020 EEG-IP: an international infant EEG data integration platform for the study of risk and resilience in autism and related conditions. Mol Med 26, 40 (2020). <a href="https://doi.org/10.1186/s10020-020-00149-3">doi:10.1186/s10020-020-00149-3</a></li>
         </ul>
       </div>
        </div>        

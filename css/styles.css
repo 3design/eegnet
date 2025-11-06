@@ -40,6 +40,34 @@ img {
 body {
   min-height: 100%;
 }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+th, td {
+  text-align: left;
+  padding: 16px;
+  border: 1px solid #ddd;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.tablehead {
+  background-color: rgb(10, 28, 127);
+}
+.tablehead2 {
+  background-color: #3b7e7b;
+}
+.tablehead th,
+.tablehead2 th {
+  color: #fff;
+}
+td {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
 /*** 
 *
 * Colour and Typography 
@@ -235,7 +263,7 @@ code {
 }
 .section-content {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 80px auto;
   padding: 0 20px;
   overflow: hidden;
@@ -668,8 +696,8 @@ footer .section-content {
   padding: 10px;
 }
 .logos a {
-  min-width: 100px;
-  max-width: 200px;
+  min-width: 75px;
+  max-width: 150px;
   margin: 15px;
   padding: 10px;
   border-radius: 15px;
@@ -986,4 +1014,63 @@ summary:after {
 .contact-form {
   width: 100%;
   height: 1200px;
+}
+
+/*headline*/
+.headline {
+  margin-bottom: 40px;
+}
+.headline h2 {
+  text-align: center;
+}
+.headline p {
+  text-align: center;
+  margin-bottom: 1em !important;
+}
+.headline ul {
+  display: block;
+  width: 360px;
+  margin:  0 auto;
+}
+.headline ul li {
+  font-family: open sans;
+  font-weight: bold;
+}
+.grey-bg2 {
+  background-color: #f3f3f3;
+  padding: 20px 0;
+}
+.font-big p,
+.font-big ul,
+.font-big li {
+  font-size: 17px;
+  line-height: 1.25em;
+}
+
+/*Table*/
+
+.tableholder {
+  overflow-x: auto;
+  margin-top: 40px;
+}
+.tablelogo {
+  width: 70px;
+  height: auto;
+  padding: 5px 0px;
+}
+.tablelogo2 {
+  width: 70px;
+  height: auto;
+  padding: 5px 0px;
+}
+
+/*Flyer*/
+.flyer {
+  width: 40%;
+  margin: 0 auto;
+}
+
+/*Index Override*/
+.margin-override {
+  margin: 40px auto;
 }

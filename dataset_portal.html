@@ -1,0 +1,364 @@
+<!doctype html>
+<html>
+<head>
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!-- general -->
+<meta charset="utf-8">
+<title>EEGNet</title>
+<meta name="viewport" content="width=device-width">
+
+<meta name="author" content="Derek Lo @ 3design-dlo.com">
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/nav-styles.css" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Open+Sans:400,700&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/drop-down.js"></script>
+</head>
+<body>
+<div id="main-wrapper">
+  <!-- navigation -->
+
+  <nav class="site-nav">
+    <div class="nav-container">
+      <a href="index.html"><img src="images/logo-eeg2.png" class="logo bottom" alt="EEGNet logo"></a>
+      <div id="showmenu">Menu</div>
+      <ul id="menu" class="nav-list hide">
+       <li class="nav-item"><a href="#!">About</a>
+        <ul class="nav-dropdown">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+       </li>
+       <li class="nav-item"><a href="#!" class="active">Resources</a>
+        <ul class="nav-dropdown">
+          <li><a href="dataset_portal.html" class="active">Dataset Portal</a></li>
+          <li><a href="tool_portal.html">Tool Portal</a></li>
+        </ul>
+       </li>
+       <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+      </ul>
+    </div>
+  </nav>
+    <!-- intro section -->
+    <section class="extreme-top">
+      <div class="section-content card-holder">
+        <h1 class="full-width text-center">Community Dataset Portal</h1>
+        <p>Information about datasets shared across the EEGNet community has been gathered and linked in the table below. Where indicated, datasets available on the <b>Canadian Open Neuroscience Platform (CONP) portal</b> are highlighted, and other platforms where they are available for access.</p>
+        <ul>
+          <li>Do you have a dataset you'd like to share via EEGNet? <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdDWTx5iCGlQJxyLYbuy91oVd6cqPZ-3PtyuLqJ2HU9XhxeRA/viewform"><b>Let us know about your Data</b></a></li>
+        </ul>
+
+    <div class="clear-all"></div>
+
+    <!-- Data Section -->
+
+        <div class="tableholder">
+          <table id="datasetTable" class="">
+            <tr class="tablehead">
+              <th>Dataset Name</th>
+              <th>Contact Name</th>
+              <th>Institution</th>
+              <th>Access status</th>
+              <th>File Format</th>
+              <th>Dataset size</th>
+              <th>Publication link</th>
+              <th>Data Access location</th>
+              <th>BIDS Compliant</th>
+            </tr>
+            <tr>
+              <td>Open Cuban Human Brain Mapping Project </td>
+              <td>Pedro Valdes-Sosa</td>
+              <td>Cuban Neuroscience Centre </td>
+              <td>Open access</td>
+              <td>.mff (EGI)</td>
+              <td>10 GB</td>
+              <td>Science</td>
+              <td>
+                <img src="images/logo-eeg2.png" class="tablelogo"/>
+                <a target="_blank" href="https://chbmp-open.loris.ca/"><img src="images/logo-conp-long.png" class="tablelogo"/></a>
+              </td>
+              <td>Yes</td>
+            </tr>
+                        <tr>
+              <td>Pathstone Mental Health </td>
+              <td>Sid Segalowitz, Karen Campbell</td>
+              <td>Brock University  </td>
+              <td>Initial release on EEGNet</td>
+              <td>.mff (EGI)  </td>
+              <td>unknown</td>
+              <td>In preparation</td>
+              <td><a target="_blank" href="https://EEGNet.Loris.ca/"><img src="images/logo-eeg2.png" class="tablelogo"/></a></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Attention control medio-frontal function  </td>
+              <td>Stefon van Noordt </td>
+              <td>Mt. St. Vincent   </td>
+              <td>Released via EEGNet</td>
+              <td>.bdf (BioSemi)  </td>
+              <td>25 GB </td>
+              <td>No</td>
+              <td><a target="_blank" href="https://EEGNet.Loris.ca/"><img src="images/logo-eeg2.png" class="tablelogo"/></a></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>The Threat Superiority Effect Across Cultures </td>
+              <td>Anna Blumenthal </td>
+              <td>Laval University - CERVO Brain Research Center  </td>
+              <td>Released via EEGNet</td>
+              <td>.eeg, .vhdr, .vmrk (BrainVision)  </td>
+              <td>3.12 GB </td>
+              <td>In preparation</td>
+              <td><a target="_blank" href="http://EEGNet.Loris.ca/"><img src="images/logo-eeg2.png" class="tablelogo"/></a></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Auditory Memory </td>
+              <td>Philippe Albouy </td>
+              <td>Montreal Neurological Institute </td>
+              <td>Released via EEGNet</td>
+              <td>.eeg, .vhdr, .vmrk (BrainVision)  </td>
+              <td>10 GB</td>
+              <td><a target="_blank" href="https://www.cell.com/neuron/pdfExtended/S0896-6273(17)30198-8">Cell</a></td>
+              <td>
+                <a target="_blank" href="https://EEGNet.Loris.ca/"><img src="images/logo-eeg2.png" class="tablelogo"/></a> and 
+                <a target="_blank" href="https://osf.io/4ck59/">OSF</a>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Auditory Memory and Visual Stimulations </td>
+              <td>Phillipe Albouy</td>
+              <td>Laval University - CERVO Brain Research Center </td>
+              <td>Dataset in preparation</td>
+              <td>.edf .mat .eeg .vhdr .vmrk (BrainVision)  </td>
+              <td>9.4 GB </td>
+              <td><a target="_blank" href="https://www.science.org/doi/10.1126/sciadv.abj9782">Science.org</a></td>
+              <td><a target="_blank" href="https://EEGNet.Loris.ca/"><img src="images/logo-eeg2.png" class="tablelogo"/></a> and <a target="_blank" href="https://osf.io/4ck59/">OSF</a></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Emotion Imagination</td>
+              <td>Scott Makeig</td>
+              <td>UCSD</td>
+              <td>Open access</td>
+              <td>.set  </td>
+              <td>~20 GB</td>
+              <td><a target="_blank" href="https://headit.ucsd.edu/studies"<a/> HeadIT </td>
+              <td><a target="_blank" href="https://openneuro.org/datasets/ds003004/versions/1.1.1">OpenNeuro.org </a></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Multiple datasets available</td>
+              <td>Robert Oostenveld </td>
+              <td>Donders Institute, Radboud University </td>
+              <td>Open and closed/registered access  </td>
+              <td>.eeg .vhdr .vmrk (BrainVision) CTF </td>
+              <td>multiple</td>
+              <td>[multiple]</td>
+              <td><a target="_blank" href="https://data.donders.ru.nl/">data.donders.ru.nl</a></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Temple University Corpora </td>
+              <td>Joseph Picone</td>
+              <td>Temple University  </td>
+              <td>Open access </td>
+              <td>.edf </td>
+              <td>4 TB </td>
+              <td><a target="_blank" href="https://isip.piconepress.com/publications/journals_refereed/2016/frontiers_neuroscience/tuh_eeg/">Pre-print</a></td>
+              <td><a target="_blank" href="https://isip.piconepress.com/projects/tuh_eeg/html/downloads.shtml">link</a></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Expectations about dynamic visual objects facilitates early sensory processing of congruent sounds  </td>
+              <td>Scott Huberty</td>
+              <td>Montreal Neurological Institute </td>
+              <td>Closed/registered access</td>
+              <td>.mff (EGI)</td>
+              <td>10 GB</td>
+              <td><a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0010945221002859">Science Direct</a></td>
+              <td><a target="_blank" href="https://osf.io/d245g/"> OSF</a></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Temperament Over Time </td>
+              <td>Nathan Fox  </td>
+              <td>University of Maryland  </td>
+              <td>Not currently online </td>
+              <td>.set  </td>
+              <td>unknown</td>
+              <td>No</td>
+              <td></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>PsyCoNeLAb</td>
+              <td>Giorgio Di Lorenzo  </td>
+              <td>University of Rome Tor Vergata </td>
+              <td></td>
+              <td>.set  </td>
+              <td>unknown</td>
+              <td>No</td>
+              <td></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><i>pending</i></td>
+              <td>Susana Peña </td>
+              <td>Hospital Nacional Rosales </td>
+              <td>In preparation </td>
+              <td>.eeg .vhdr .vmrk (BrainVision)  </td>
+              <td>2 GB  </td>
+              <td>In preparation</td>
+              <td></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><i>pending</i></td>
+              <td>Gorsev Yener  </td>
+              <td>Izmir University of Economics, Medical School </td>
+              <td>Not currently online  </td>
+              <td>.edf .eeg .vhdr .vmrk (BrainVision)</td>
+              <td>unknown</td>
+              <td>In preparation</td>
+              <td></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><i>pending</i></td>
+              <td>Marouani Saoussen </td>
+              <td>FSS Sfax  </td>
+              <td>Not currently online  </td>
+              <td>.edf .mat .csv  </td>
+              <td>1 GB </td>
+              <td>No</td>
+              <td></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><i>pending</i></td>
+              <td>Joshua Ewen </td>
+              <td>Kennedy Krieger Institute </td>
+              <td>Not currently online  </td>
+              <td>.edf</td>
+              <td></td>
+              <td>No</td>
+              <td></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><i>pending</i></td>
+              <td>June Sung Moon  </td>
+              <td>Concordia University  </td>
+              <td>Not currently online</td>
+              <td>.edf .mat .set</td>
+              <td>30 GB </td>
+              <td>No</td>
+              <td></td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><i>pending</i></td>
+              <td>Christine Lackner </td>
+              <td>Mount Saint Vincent University </td>
+              <td>Not currently online </td>
+              <td>.set .bdf (BioSemi) .eeg .vhdr .vmrk (BrainVision)</td>
+              <td></td>
+              <td>No</td>
+              <td></td>
+              <td>Yes</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+      
+   <!-- footer -->
+
+    <footer>  
+      <div class="section-content flex flex-align-center">
+        <div class="logos">
+          <a target="_blank" href="https://braincanada.ca"><img src="images/logo-braincanada.png" alt="BrainCanada logo"></a>
+          <a target="_blank" href="http://ludmercentre.ca"><img src="images/logo-ludmer.png" alt="Ludmercentre logo"></a>
+          <a target="_blank" href="https://mcgill.ca"><img src="images/logo-mcgill.png" alt="McGill logo"></a>
+          <a target="_blank" href="https://www.mcgill.ca/neuro/"><img src="images/logo-neuro.jpg" alt="the Montreal Neurological Institute-Hospital logo"></a>
+          <a target="_blank" href="https://conp.ca"><img src="images/logo-conp-long.png" alt="the Canadian Open Neuroscience Platform logo"></a>
+          <a target="_blank" href="https://www.ulaval.ca/"><img src="images/logo-laval.png" alt="the University of Laval logo"></a>
+          <a target="_blank" href="https://brocku.ca/"><img src="images/logo-brock.png" alt="the Brock University logo"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+<script>
+  $(function(){
+    $("#showmenu").click(function(e){
+    $("#menu").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
+</script>
+<script>
+$('.map')
+  .click(function(){
+      $(this).find('iframe').addClass('clicked')})
+  .mouseleave(function(){
+      $(this).find('iframe').removeClass('clicked')});
+</script>
+<script type="text/javascript">
+  // The function actually applying the offset
+function offsetAnchor() {
+  if (location.hash.length !== 0) {
+    window.scrollTo(window.scrollX, window.scrollY - 100);
+  }
+}
+
+// Captures click events of all <a> elements with href starting with #
+$(document).on('click', 'a[href^="#"]', function(event) {
+  // Click events are captured before hashchanges. Timeout
+  // causes offsetAnchor to be called after the page jump.
+  window.setTimeout(function() {
+    offsetAnchor();
+  }, 0);
+});
+
+// Set the offset when entering page with hash present in the url
+window.setTimeout(offsetAnchor, 0);
+</script>
+
+<!-- for sticky second nav -->
+<!-- <script>
+$("document").ready(function($){
+    var $stick = $('#second-nav');
+    var $pad = $('#stickypad');
+    var $win = $(window);
+    var winH = $win.height() + 0;   // Get the window height.
+
+    $win.on("scroll", function () {
+        if ($(this).scrollTop() > winH ) {
+            $stick.addClass("stick");
+            $pad.addClass("stick-pad");
+        } else {
+            $stick.removeClass("stick");
+            $pad.removeClass("stick-pad");
+        }
+    }).on("resize", function(){ // If the user resizes the window
+       winH = $(this).height(); // you'll need the new height value
+    });
+});
+</script> -->
+</body></html>

@@ -6,8 +6,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="manifest" href="site.webmanifest">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 <!-- general -->
 <meta charset="utf-8">
@@ -32,7 +32,19 @@
       <a href="index.html"><img width="70%" height="70%" src="images/logo-eeg2.png" class="logo bottom active" alt="EEGNet logo"></a>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
-       <li class="nav-item"><a href="about.html">About</a></li>
+       <li class="nav-item"><a href="#!">About</a>
+        <ul class="nav-dropdown">
+          <li><a href="about.html">About Us</a></li>
+			<!--li><a href="publications.html">Publications</a></li-->
+          <li><a href="support.html">Support</a></li>
+        </ul>
+       </li>
+       <li class="nav-item"><a href="#!">Resources</a>
+        <ul class="nav-dropdown">
+          <li><a href="dataset_portal.html">Dataset Portal</a></li>
+          <li><a href="tool_portal.html">Tool Portal</a></li>
+        </ul>
+       </li>
        <li class="nav-item"><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
@@ -48,41 +60,83 @@
       </video>
       <div class="title-content">
         <img src="images/logo-eeg2.png" class="logo-hero" alt="EEGNet logo">
-        <p class="font-shadow-black font-white">Collaborative EEG platform for advancing neuroscience</p>
+        <h3 class="font-shadow-black font-white">Collaborative EEG platform for advancing neuroscience</h3>
       </div>
     </section>
-    <div class="clear-all"></div>
-
+    <div class="clear-all"></div>   
+    
     <!-- intro section -->
     <section>
-      <div class="section-content">
+	
+      <div class="section-content margin-override ">
+		<div class="headline text-center">
+            <p><b>EEGNet</B> is an initiative that facilitates national and international <b>collaborative EEG-based neuroscience research</b>.</p>
+			<p>At the core of EEGNet is the development of a scalable neuroinformatics hub for <b>data sharing and analytics</b> for the investigation of biomarkers of brain disorders.</p>
+			<p>EEGNet brings scientists and technical experts together in a centralized platform to combine standardized annotated EEG data and analytics for global health applications, by harmonizing data formats and computational tools used across the Canadian scientific community.</p>
+        </div>
+        <div class="extra-margin-2x headline text-center grey-bg2">
+        <h2>Request an account at <a href="https://eegnet.loris.ca/" target="_blank">EEGNet.Loris.ca</a></h2>
+            <p>You may also wish to <a href="https://portal.cbrain.mcgill.ca/signups/new" target="_blank"><b>request a CBRAIN account</b></a> to access the EEGNet Analytics Hub and Processing Portal</p>
+			<div class="extra-top h1 extra-margin-2x text-center">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/gXI1Clpooyk?si=qqaS380dY-YM25U2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>			</div>
+		</div>
+		<div>
+			<div class = "headline text-center">
+			<h2>EEGNet Spring Colloquium 2024</h2>
+			<h3> May 23, 2024 </h3>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/PpC20ch8uPw?si=Yh0rUpyCej3op-Oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>			</div>
+			<div class = "col-2 cardholder headline text-center">
+			<h2>Platform Launch Technical Preview</h2>
+			<h3> November 28, 2023 </h3>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/bB91A28KfEU?si=9snhX_dDNhLHH-EB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+			<div class ="col-2 cardholder headline text-center">
+			<h2> EEGNet Virtual Colloquium 2023</h2>
+			<h3> May 10, 2023 </h3>
+            <iframe class="text-center" width="560" height="315" src="https://www.youtube.com/embed/Wk4L_aBOCz4?si=gs5Abm9WJKsRRSlV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="clear-all"></div>   
+		</div>
+	<div class="headline grey-bg2"> 
+       <h2>EEGNet is inviting input from community stakeholders and research partners</h2>
+       <p><b>Please let us know more about your research context and share your views in these brief surveys: </b> </p>
+        <ul>
+          <li><a href="http://tinyurl.com/2w6fjanu" target="_blank">User Requirements and Needs</a></li>
+          <li><a href="http://tinyurl.com/2czpyrn6" target="_blank">Technical Landscape</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdDWTx5iCGlQJxyLYbuy91oVd6cqPZ-3PtyuLqJ2HU9XhxeRA/viewform" target="_blank">Datasets</a></li>
+          <li><a href="https://docs.google.com/forms/u/2/d/e/1FAIpQLScUmJfgbtwaEcYKk5IjQj1hV1K9jggLlrOgZfXWQX_qOW935w/viewform" target="_blank">Tools</a></li>
+        </ul>
+    </div>
         <div class="col-2 flex">
           <img src="images/eeg-image.png" class="infographic" alt="Infographic showing an eeg">
         </div>
-        <div class="col-2 card-holder ">
-          <h2>An open platform for national and international EEG-based collaborative neuroscience research</h2>
-          <p>EEGNet will bring scientists and technical experts together in a centralized platform to combine EEG data and analytics for global health applications, by harmonizing data formats and computational tools used across the Canadian scientific community.</p>
-          <p>At the core of EEGNet is the development of an open, scalable neuroinformatics hub for the investigation of biomarkers of brain disorders.</p>
-          <p>EEGNet will leverage the existing technologies of the Canadian Open Neuroscience Platform (<a href="http://conp.ca">CONP</a>), built at the Montreal Neurological Institute-Hospital (<a href="http://theneuro.ca">The Neuro</a>), to share EEG data and tools from coast to coast.</p>
-          <p>Community-driven EEG tools, workflows and standards will allow earlier detection of abnormalities in developmental and psychiatric disorders, neurodegenerative diseases, and the study of states of consciousness.</p>
-          <p>EEGNet is a constituent organization of the Global Brain Consortium (<a href="https://globalbrainconsortium.org/">GBC</a>), an international neuroscience collaboration focused on EEG-mediated applications in global health.</p>
-          <p>EEGNet will enable Canadian researchers to contribute expertise to both national and international research applications in a scalable open collaboration hub.</p>
+        <div class="col-2 card-holder extra-margin-2x">
+			    <div class="text-center">
+			    <h2><a href="https://braincanada.ca/news/canadian-research-platform-receives-major-funding-boost/" target="_blank">Brain Canada announces $1.84M grant to EEGNet to fuel international collaboration and optimize data sharing for the research community</a></h2>
+			    <h3 class = "text-align: right"> April 1, 2021</h3>
+			    </div>
+		    </div>
+		<div class="col-2 card-holder">
+          <h2 class = "grey bg-2"> An open platform for national and international EEG-based collaborative neuroscience research</h2>
+          <p>Community-driven EEG tools, workflows and standards will allow earlier detection of abnormalities in developmental and psychiatric disorders, neurodegenerative diseases, and the study of states of consciousness. EEGNet enables Canadian researchers to contribute expertise to both national and international research applications in a scalable open collaboration hub.</p>
+		  <p>EEGNet leverages the existing technologies of the Canadian Open Neuroscience Platform (<a href="http://conp.ca" target="_blank">CONP</a>), built at the Montreal Neurological Institute-Hospital (<a href="http://theneuro.ca" target="_blank">The Neuro</a>), to share EEG data and tools from coast to coast.</p>
+          <p>EEGNet is a constituent organization of the Global Brain Consortium (<a href="https://globalbrainconsortium.org/" target="_blank">GBC</a>), an international neuroscience collaboration focused on EEG-mediated applications in global health.</p>
           </p>
-        </div>
-      </div>
+	</div>
     </section>
     <div class="clear-all"></div>
 
     <footer>  
       <div class="section-content flex flex-align-center">
         <div class="logos">
-          <a href="https://braincanada.ca"><img src="images/logo-braincanada.png" alt="BrainCanada logo"></a>
-          <a href="http://ludmercentre.ca"><img src="images/logo-ludmer.png" alt="Ludmercentre logo"></a>
-          <a href="https://mcgill.ca"><img src="images/logo-mcgill.png" alt="McGill logo"></a>
-          <a href="https://www.mcgill.ca/neuro/"><img src="images/logo-neuro.jpg" alt="the Montreal Neurological Institute-Hospital logo"></a>
-          <a href="https://conp.ca"><img src="images/logo-conp-long.png" alt="the Canadian Open Neuroscience Platform logo"></a>
-          <a href="https://www.ulaval.ca/"><img src="images/logo-laval.png" alt="the University of Laval logo"></a>
-          <a href="https://brocku.ca/"><img src="images/logo-brock.png" alt="the University of Brock logo"></a>
+          <a href="https://braincanada.ca" target="_blank"><img src="images/logo-braincanada.png" alt="BrainCanada logo"></a>
+          <a href="http://ludmercentre.ca" target="_blank"><img src="images/logo-ludmer.png" alt="Ludmercentre logo"></a>
+          <a href="https://mcgill.ca" target="_blank"><img src="images/logo-mcgill.png" alt="McGill logo"></a>
+          <a href="https://www.mcgill.ca/neuro/" target="_blank"><img src="images/logo-neuro.jpg" alt="the Montreal Neurological Institute-Hospital logo"></a>
+          <a href="https://conp.ca" target="_blank"><img src="images/logo-conp-long.png" alt="the Canadian Open Neuroscience Platform logo"></a>
+          <a href="https://www.ulaval.ca/" target="_blank"><img src="images/logo-laval.png" alt="the University of Laval logo"></a>
+          <a href="https://brocku.ca/" target="_blank"><img src="images/logo-brock.png" alt="the University of Brock logo"></a>
         </div>
         <!-- div class="col-2 font-white text-center">
           <h3>Contact Us</h3>
