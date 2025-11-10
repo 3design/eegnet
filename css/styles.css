@@ -215,6 +215,9 @@ code {
 .extra-top h1 {
   margin-bottom: 20px;
 }
+.extra-margin-half {
+  margin-bottom: 10px;
+}
 .extra-margin {
   margin-bottom: 20px;
 }
@@ -1073,4 +1076,24 @@ summary:after {
 /*Index Override*/
 .margin-override {
   margin: 40px auto;
+}
+
+/*Publications styles*/
+.publications-ul {
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0;
+}
+.publications-ul li {
+  margin: 0 0 10px 0;
+  padding: 0; 
+}
+.publications-ul-special {
+  list-style-type: disc;
+  margin: 0 0 10px 10px;
+  padding: 0; 
+}
+.publications-ul-special li {
+  margin: 0 0 10px 10px;
+  padding: 0; 
 }
