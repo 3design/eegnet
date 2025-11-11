@@ -1097,3 +1097,6 @@ summary:after {
   margin: 0 0 10px 10px;
   padding: 0; 
 }
+.publications-content {
+  max-width: 1200px;
+}
