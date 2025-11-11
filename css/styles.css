@@ -1085,7 +1085,7 @@ summary:after {
   padding: 0;
 }
 .publications-ul li {
-  margin: 0 0 10px 0;
+  margin: 0 0 1em 0;
   padding: 0; 
 }
 .publications-ul-special {
@@ -1094,7 +1094,7 @@ summary:after {
   padding: 0; 
 }
 .publications-ul-special li {
-  margin: 0 0 10px 10px;
+  margin: 0 0 1em 10px;
   padding: 0; 
 }
 .publications-content {
